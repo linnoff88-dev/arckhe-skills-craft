@@ -83,7 +83,7 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MÓDULO 5.5</span>
 <h1 class="text-3xl sm:text-4xl font-bold mb-4">🚀 Dicas Avançadas: Governança, Segurança e Escala</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Você já sabe criar e publicar. Agora o nível profissional: skills internas (privadas), o princípio da não-surpresa, estratégia de versionamento, rollout em time, medir adoção e manter dezenas de skills vivas sem virar caos.</p>
+<p class="text-lg text-neutral-400 max-w-3xl">Você já sabe criar e publicar. Agora o nível profissional: skills internas (privadas), o princípio da nêo-surpresa, estratégia de versionamento, rollout em time, medir adoçêo e manter dezenas de skills vivas sem virar caos.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">45</div><div class="text-xs text-neutral-400">Minutos</div></div>
@@ -107,7 +107,7 @@
 <pre class="text-neutral-300 leading-relaxed">---
 name: deploy-runbook-acme
 description: Runbook interno de deploy da Acme. Acione em deploy,
-  rollback ou incidente em produção.
+  rollback ou incidente em produçêo.
 metadata:
   internal: true
 ---
@@ -128,7 +128,7 @@ INSTALL_INTERNAL_SKILLS=1 npx skills add acme/skills-privadas</pre>
 <h4 class="font-bold text-white mb-3">Por que separar do público</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Evita vazar contexto sensível no catálogo</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Não polui o skills.sh com ruído só-seu</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Nêo polui o skills.sh com ruído só-seu</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Instala por opt-in explícito, nunca por acidente</span></li>
 </ul>
 </div>
@@ -138,10 +138,10 @@ INSTALL_INTERNAL_SKILLS=1 npx skills add acme/skills-privadas</pre>
 <section class="mb-16" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">🛡️ Não-surpresa e segurança</h2>
+<h2 class="text-2xl font-bold">🛡️ Nêo-surpresa e segurança</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O princípio de ouro: <strong class="text-teal-400">a skill nunca faz o que a description não promete</strong>. Como skills se instalam via symlink e atualizam com um comando, um repo malicioso ou descuidado contamina muita gente de uma vez. A confiança do ecossistema inteiro depende disso.
+        O princípio de ouro: <strong class="text-teal-400">a skill nunca faz o que a description nêo promete</strong>. Como skills se instalam via symlink e atualizam com um comando, um repo malicioso ou descuidado contamina muita gente de uma vez. A confiança do ecossistema inteiro depende disso.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -157,7 +157,7 @@ INSTALL_INTERNAL_SKILLS=1 npx skills add acme/skills-privadas</pre>
 <h4 class="font-bold text-teal-400 mb-4">✓ Confiável</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Faz exatamente o que a description diz</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Ação destrutiva pede confirmação explícita</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Açêo destrutiva pede confirmaçêo explícita</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Least privilege: toca só no necessário</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Scripts auditáveis, sem dependências obscuras</span></li>
 </ul>
@@ -165,7 +165,7 @@ INSTALL_INTERNAL_SKILLS=1 npx skills add acme/skills-privadas</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Audite como quem instala</h3>
-<p class="text-neutral-300 text-sm">Antes de publicar, leia seus próprios <code>scripts/</code> com os olhos de um usuário desconfiado. Sem malware, sem exfiltração, sem efeito colateral surpresa. Uma quebra de confiança queima a reputação do repo inteiro — e respinga no skills.sh.</p>
+<p class="text-neutral-300 text-sm">Antes de publicar, leia seus próprios <code>scripts/</code> com os olhos de um usuário desconfiado. Sem malware, sem exfiltraçêo, sem efeito colateral surpresa. Uma quebra de confiança queima a reputaçêo do repo inteiro — e respinga no skills.sh.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -180,7 +180,7 @@ INSTALL_INTERNAL_SKILLS=1 npx skills add acme/skills-privadas</pre>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6">
 <h4 class="font-semibold text-teal-400 mb-4">O que cada tipo de mudança exige</h4>
 <div class="space-y-3 text-sm">
-<div class="flex items-start space-x-3"><span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-400 font-mono text-xs flex-shrink-0">patch</span><p class="text-neutral-300">Correção de texto, clarificação do corpo. Baixo risco — pode ir direto, com eval rápido.</p></div>
+<div class="flex items-start space-x-3"><span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-400 font-mono text-xs flex-shrink-0">patch</span><p class="text-neutral-300">Correçêo de texto, clarificaçêo do corpo. Baixo risco — pode ir direto, com eval rápido.</p></div>
 <div class="flex items-start space-x-3"><span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-400 font-mono text-xs flex-shrink-0">minor</span><p class="text-neutral-300">Novo comportamento aditivo. Ainda compatível — rode evals completos antes.</p></div>
 <div class="flex items-start space-x-3"><span class="px-2 py-0.5 rounded bg-red-500/20 text-red-400 font-mono text-xs flex-shrink-0">major</span><p class="text-neutral-300">Mudança de gatilho ou de comportamento esperado. <strong class="text-white">Quebra quem dependia</strong> — comunique e documente no CHANGELOG.</p></div>
 </div>
@@ -197,7 +197,7 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <h3 class="text-lg font-semibold text-teal-400 mb-3">A regra da mudança de gatilho</h3>
-<p class="text-neutral-300 text-sm">Mexer na <code>description</code> é a mudança mais perigosa que existe: ela altera <em>quando</em> a skill dispara para todos que instalaram. Trate toda edição de description como potencial <code>major</code> até os evals provarem o contrário.</p>
+<p class="text-neutral-300 text-sm">Mexer na <code>description</code> é a mudança mais perigosa que existe: ela altera <em>quando</em> a skill dispara para todos que instalaram. Trate toda ediçêo de description como potencial <code>major</code> até os evals provarem o contrário.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -207,7 +207,7 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <h2 class="text-2xl font-bold">👥 Rollout em time</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Distribuir skills para um time é diferente de publicar para o mundo. Você quer consistência (todo mundo com o mesmo conjunto), controle de versão e um caminho de adoção que não pegue ninguém de surpresa.
+        Distribuir skills para um time é diferente de publicar para o mundo. Você quer consistência (todo mundo com o mesmo conjunto), controle de versêo e um caminho de adoçêo que nêo pegue ninguém de surpresa.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
@@ -241,12 +241,12 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <section class="mb-16" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">📈 Medir adoção</h2>
+<h2 class="text-2xl font-bold">📈 Medir adoçêo</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
         Skill em escala é produto — e produto se mede. Duas métricas que importam: <strong class="text-teal-400">install count</strong> (quantos adotaram) e <strong class="text-teal-400">triggering</strong> (se dispara nos casos certos). Uma alta e a outra baixa contam histórias bem diferentes.
       </p>
-<svg aria-label="Matriz de adoção cruzando install count com qualidade de triggering" class="w-full h-auto my-6" role="img" viewbox="0 0 640 220">
+<svg aria-label="Matriz de adoçêo cruzando install count com qualidade de triggering" class="w-full h-auto my-6" role="img" viewbox="0 0 640 220">
 <defs><filter id="g55a"><fegaussianblur result="b" stddeviation="2"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs>
 <line filter="url(#g55a)" opacity="0.6" stroke="#38bdf8" stroke-width="1.5" x1="80" x2="600" y1="190" y2="190"></line>
 <line filter="url(#g55a)" opacity="0.6" stroke="#38bdf8" stroke-width="1.5" x1="80" x2="80" y1="20" y2="190"></line>
@@ -269,7 +269,7 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-bold text-white mb-2">Install count</h4>
-<p class="text-neutral-300 text-sm">Mede descoberta e adoção. Baixo com bom triggering = problema de naming/description ou de nicho, não de qualidade. Não persiga o leaderboard.</p>
+<p class="text-neutral-300 text-sm">Mede descoberta e adoçêo. Baixo com bom triggering = problema de naming/description ou de nicho, nêo de qualidade. Nêo persiga o leaderboard.</p>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <h4 class="font-bold text-teal-400 mb-2">Triggering</h4>
@@ -284,7 +284,7 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <h2 class="text-2xl font-bold">♻️ Manter skills vivas em escala</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Uma skill é fácil de manter. Vinte skills viram um portfólio — e portfólio sem manutenção apodrece. Os pro tips para manter dezenas de skills úteis sem virar caos:
+        Uma skill é fácil de manter. Vinte skills viram um portfólio — e portfólio sem manutençêo apodrece. Os pro tips para manter dezenas de skills úteis sem virar caos:
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -299,9 +299,9 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
 <h4 class="font-bold text-teal-400 mb-4">✓ Portfólio vivo</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Cada skill atômica, gatilhos sem sobreposição</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Cada skill atômica, gatilhos sem sobreposiçêo</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Suite de evals roda no CI a cada push</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Revisão periódica: aposenta o que não dispara</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Revisêo periódica: aposenta o que nêo dispara</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Corpo enxuto; detalhe vai pra references/</span></li>
 </ul>
 </div>
@@ -309,15 +309,15 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6">
 <h4 class="font-semibold text-teal-400 mb-4">Pro tips finais</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Evals no CI:</strong> rode should-trigger / should-not-trigger automaticamente em cada PR — pega regressão de gatilho cedo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Audite sobreposição:</strong> duas skills que disparam no mesmo prompt competem e confundem. Funda ou diferencie os gatilhos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Evals no CI:</strong> rode should-trigger / should-not-trigger automaticamente em cada PR — pega regressêo de gatilho cedo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Audite sobreposiçêo:</strong> duas skills que disparam no mesmo prompt competem e confundem. Funda ou diferencie os gatilhos.</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Aposente sem dó:</strong> skill com install count parado e triggering ruim só polui. Deprecie no CHANGELOG e remova.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Mantenha enxuto:</strong> a cada release, pergunte o que dá pra cortar. Corpo &lt;500 linhas não é meta, é higiene.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Mantenha enxuto:</strong> a cada release, pergunte o que dá pra cortar. Corpo &lt;500 linhas nêo é meta, é higiene.</span></li>
 </ul>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> O fechamento</h3>
-<p class="text-neutral-300 text-sm">Você percorreu as 5 trilhas: panorama do ecossistema, qualidade e as melhores, anatomia, o loop de criação e os modelos mentais de decisão, publicação e escala. Daqui é prática: escolha um workflow repetível, escreva, publique, meça e itere.</p>
+<p class="text-neutral-300 text-sm">Você percorreu as 5 trilhas: panorama do ecossistema, qualidade e as melhores, anatomia, o loop de criaçêo e os modelos mentais de decisêo, publicaçêo e escala. Daqui é prática: escolha um workflow repetível, escreva, publique, meça e itere.</p>
 </div>
 </section>
 <!-- Resumo + fechamento do curso -->
@@ -326,15 +326,15 @@ git tag v1.2.0 &amp;&amp; git push --tags</pre>
 <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo</h2>
 <div class="space-y-4 mb-8">
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Skills internas</strong><span class="text-neutral-400"> — metadata.internal + INSTALL_INTERNAL_SKILLS mantêm conhecimento proprietário fora do catálogo público</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Não-surpresa e segurança</strong><span class="text-neutral-400"> — sem malware/exfiltração; least privilege; audite seus resources como usuário desconfiado</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Nêo-surpresa e segurança</strong><span class="text-neutral-400"> — sem malware/exfiltraçêo; least privilege; audite seus resources como usuário desconfiado</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Versionamento</strong><span class="text-neutral-400"> — patch/minor/major; mudança de description é potencial major porque altera o gatilho de todos</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Rollout em time</strong><span class="text-neutral-400"> — repo curado, piloto antes do geral, comunique antes de cada update</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Medir adoção</strong><span class="text-neutral-400"> — install count (descoberta) × triggering (precisão); o pior é muito install com gatilho ruim</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Skills vivas em escala</strong><span class="text-neutral-400"> — evals no CI, audite sobreposição, aposente as mortas, mantenha enxuto</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Medir adoçêo</strong><span class="text-neutral-400"> — install count (descoberta) × triggering (precisêo); o pior é muito install com gatilho ruim</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Skills vivas em escala</strong><span class="text-neutral-400"> — evals no CI, audite sobreposiçêo, aposente as mortas, mantenha enxuto</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-teal-400 mb-2">Próximo:</h3>
-<p class="text-neutral-300">Módulo 5.6 — Regras 2026: graus de liberdade, limites da descrição, hooks na skill, o corte de 5.000 tokens e a checklist das 10 regras com o validador.</p>
+<p class="text-neutral-300">Módulo 5.6 — Regras 2026: graus de liberdade, limites da descriçêo, hooks na skill, o corte de 5.000 tokens e a checklist das 10 regras com o validador.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 5</a>

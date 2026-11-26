@@ -100,7 +100,7 @@
 <h2 class="text-2xl font-bold">🪜 Os 3 níveis de carregamento</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O segredo das skills é o <strong class="text-purple-400">progressive disclosure</strong>: a informação é revelada em camadas, conforme o agente precisa. Em vez de jogar tudo no contexto de uma vez, a skill expõe primeiro só a metadata, depois o corpo, e por último os recursos pesados.
+        O segredo das skills é o <strong class="text-purple-400">progressive disclosure</strong>: a informaçêo é revelada em camadas, conforme o agente precisa. Em vez de jogar tudo no contexto de uma vez, a skill expõe primeiro só a metadata, depois o corpo, e por último os recursos pesados.
       </p>
 <svg aria-label="Pirâmide dos três níveis de progressive disclosure: metadata sempre carregada, corpo sob disparo, recursos sob demanda" class="w-full h-auto my-6" role="img" viewbox="0 0 600 320">
 <defs>
@@ -152,7 +152,7 @@ description: Create new skills, modify and
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica</h3>
-<p class="text-neutral-300 text-sm">Como o Nível 1 está sempre ligado, cada palavra custa contexto multiplicado por TODAS as skills. Mantenha ~100 palavras: descritivo o bastante para disparar, enxuto o bastante para não pesar.</p>
+<p class="text-neutral-300 text-sm">Como o Nível 1 está sempre ligado, cada palavra custa contexto multiplicado por TODAS as skills. Mantenha ~100 palavras: descritivo o bastante para disparar, enxuto o bastante para nêo pesar.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -162,14 +162,14 @@ description: Create new skills, modify and
 <h2 class="text-2xl font-bold">② Nível 2 — corpo do SKILL.md</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Quando a description bate com a situação, o agente carrega o <strong class="text-purple-400">corpo do SKILL.md</strong> — as instruções completas. A recomendação canônica é manter o corpo <strong class="text-purple-400">abaixo de 500 linhas</strong>. Ele só entra no contexto no momento do disparo, não antes.
+        Quando a description bate com a situaçêo, o agente carrega o <strong class="text-purple-400">corpo do SKILL.md</strong> — as instruções completas. A recomendaçêo canônica é manter o corpo <strong class="text-purple-400">abaixo de 500 linhas</strong>. Ele só entra no contexto no momento do disparo, nêo antes.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">A description dispara</h4>
-<p class="text-neutral-300 text-sm">O agente reconhece que a situação atual casa com o Nível 1.</p>
+<p class="text-neutral-300 text-sm">O agente reconhece que a situaçêo atual casa com o Nível 1.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -189,7 +189,7 @@ description: Create new skills, modify and
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Por que &lt;500 linhas</h3>
-<p class="text-neutral-300 text-sm">Corpos longos diluem a atenção do agente e desperdiçam contexto cada vez que disparam. Se o conteúdo crescer demais, mova detalhes para <code class="bg-dark-700 px-1 rounded">references/</code> (Nível 3) e deixe o corpo apenas com o essencial e ponteiros.</p>
+<p class="text-neutral-300 text-sm">Corpos longos diluem a atençêo do agente e desperdiçam contexto cada vez que disparam. Se o conteúdo crescer demais, mova detalhes para <code class="bg-dark-700 px-1 rounded">references/</code> (Nível 3) e deixe o corpo apenas com o essencial e ponteiros.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -199,7 +199,7 @@ description: Create new skills, modify and
 <h2 class="text-2xl font-bold">③ Nível 3 — bundled resources</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O Nível 3 são os recursos empacotados: arquivos em <code class="bg-dark-700 px-1 rounded">scripts/</code>, <code class="bg-dark-700 px-1 rounded">references/</code> e <code class="bg-dark-700 px-1 rounded">assets/</code>. Tamanho <strong class="text-purple-400">ilimitado</strong>, carregados <strong class="text-purple-400">sob demanda</strong>. O detalhe poderoso: scripts <strong class="text-purple-400">executam sem carregar o código no contexto</strong> — o agente só recebe o resultado.
+        O Nível 3 sêo os recursos empacotados: arquivos em <code class="bg-dark-700 px-1 rounded">scripts/</code>, <code class="bg-dark-700 px-1 rounded">references/</code> e <code class="bg-dark-700 px-1 rounded">assets/</code>. Tamanho <strong class="text-purple-400">ilimitado</strong>, carregados <strong class="text-purple-400">sob demanda</strong>. O detalhe poderoso: scripts <strong class="text-purple-400">executam sem carregar o código no contexto</strong> — o agente só recebe o resultado.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -220,11 +220,11 @@ description: Create new skills, modify and
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
-<p class="text-neutral-500 mb-3">No corpo, aponte para o recurso (não cole o conteúdo):</p>
+<p class="text-neutral-500 mb-3">No corpo, aponte para o recurso (nêo cole o conteúdo):</p>
 <pre class="text-neutral-300 leading-relaxed">Para converter o arquivo, execute:
   python scripts/convert.py &lt;input&gt;
 
-Detalhes de configuração estão em
+Detalhes de configuraçêo estêo em
 references/config.md — leia se necessário.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
@@ -239,7 +239,7 @@ references/config.md — leia se necessário.</pre>
 <h2 class="text-2xl font-bold">🎯 Escrevendo a description que dispara</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Aqui está o ponto mais sutil de toda a anatomia: <strong class="text-purple-400">Claude tende a SUBDISPARAR skills</strong>. Por padrão ele é conservador e, na dúvida, não ativa. A correção é escrever uma description um pouco <strong class="text-purple-400">"pushy"</strong> — assertiva nos gatilhos, deixando claro quando usar.
+        Aqui está o ponto mais sutil de toda a anatomia: <strong class="text-purple-400">Claude tende a SUBDISPARAR skills</strong>. Por padrêo ele é conservador e, na dúvida, nêo ativa. A correçêo é escrever uma description um pouco <strong class="text-purple-400">"pushy"</strong> — assertiva nos gatilhos, deixando claro quando usar.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -262,14 +262,14 @@ references/config.md — leia se necessário.</pre>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Calibre com near-misses</h3>
-<p class="text-neutral-300 text-sm">Para afinar, pense em queries que <em>deveriam</em> disparar e em near-misses que <em>não</em> deveriam. Se a skill ignora casos óbvios, fique mais pushy; se dispara em situações erradas, restrinja os gatilhos. Esse ajuste fino é o coração do loop de criação da Trilha 4.</p>
+<p class="text-neutral-300 text-sm">Para afinar, pense em queries que <em>deveriam</em> disparar e em near-misses que <em>nêo</em> deveriam. Se a skill ignora casos óbvios, fique mais pushy; se dispara em situações erradas, restrinja os gatilhos. Esse ajuste fino é o coraçêo do loop de criaçêo da Trilha 4.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
 <section class="mb-16" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">🗂️ Organização por domínio</h2>
+<h2 class="text-2xl font-bold">🗂️ Organizaçêo por domínio</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
         Quando uma skill cobre vários domínios, divida as referências por arquivo — <code class="bg-dark-700 px-1 rounded">references/aws.md</code>, <code class="bg-dark-700 px-1 rounded">gcp.md</code>, <code class="bg-dark-700 px-1 rounded">azure.md</code> — para que o agente leia <strong class="text-purple-400">só o relevante</strong>. E em qualquer arquivo com mais de <strong class="text-purple-400">300 linhas</strong>, adicione uma tabela de conteúdo no topo.
@@ -295,13 +295,13 @@ references/config.md — leia se necessário.</pre>
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Por que isso economiza contexto</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-purple-400">•</span><span>Um arquivo único de 900 linhas força o agente a carregar tudo. Três de 300 deixam ele pegar só um.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">•</span><span>A tabela de conteúdo deixa o agente navegar até a seção certa sem reler o arquivo inteiro.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">•</span><span>Domínios separados também facilitam manutenção: você edita azure.md sem tocar no resto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">•</span><span>A tabela de conteúdo deixa o agente navegar até a seçêo certa sem reler o arquivo inteiro.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">•</span><span>Domínios separados também facilitam manutençêo: você edita azure.md sem tocar no resto.</span></li>
 </ul>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mt-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica final</h3>
-<p class="text-neutral-300 text-sm">Os três níveis + organização por domínio formam um sistema: description pushy no Nível 1 para disparar, corpo enxuto no Nível 2, recursos fatiados por domínio no Nível 3. É assim que skills como a <code class="bg-dark-700 px-1 rounded">azure-ai</code> (358k installs) escalam sem perder precisão.</p>
+<p class="text-neutral-300 text-sm">Os três níveis + organizaçêo por domínio formam um sistema: description pushy no Nível 1 para disparar, corpo enxuto no Nível 2, recursos fatiados por domínio no Nível 3. É assim que skills como a <code class="bg-dark-700 px-1 rounded">azure-ai</code> (358k installs) escalam sem perder precisêo.</p>
 </div>
 </section>
 <!-- Resumo -->
@@ -314,11 +314,11 @@ references/config.md — leia se necessário.</pre>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Nível 2 — corpo</strong><span class="text-neutral-400"> — &lt;500 linhas, carrega só quando a skill dispara.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Nível 3 — recursos</strong><span class="text-neutral-400"> — ilimitado, sob demanda; scripts executam sem ocupar contexto.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Description que dispara</strong><span class="text-neutral-400"> — seja pushy; Claude subdispara; o que + quando + gatilhos.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Organização por domínio</strong><span class="text-neutral-400"> — aws/gcp/azure separados + índice em arquivos &gt;300 linhas.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Organizaçêo por domínio</strong><span class="text-neutral-400"> — aws/gcp/azure separados + índice em arquivos &gt;300 linhas.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-purple-400 mb-2">Próximo:</h3>
-<p class="text-neutral-300">Módulo 3.3 — ⭐ As Melhores Anatomias para Imitar: disseque o SKILL.md de skills campeãs e veja o que copiar de cada uma.</p>
+<p class="text-neutral-300">Módulo 3.3 — ⭐ As Melhores Anatomias para Imitar: disseque o SKILL.md de skills campeês e veja o que copiar de cada uma.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 3</a>

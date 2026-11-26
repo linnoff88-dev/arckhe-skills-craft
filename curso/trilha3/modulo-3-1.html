@@ -100,7 +100,7 @@
 <h2 class="text-2xl font-bold">🧱 Estrutura geral</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Um SKILL.md tem exatamente duas partes. No topo, um bloco de <strong class="text-purple-400">frontmatter YAML</strong> entre dois delimitadores <code class="bg-dark-700 px-1 rounded">---</code>. Logo abaixo, o <strong class="text-purple-400">corpo em Markdown</strong> com as instruções de comportamento. Essa separação é o que todo agente compatível espera encontrar.
+        Um SKILL.md tem exatamente duas partes. No topo, um bloco de <strong class="text-purple-400">frontmatter YAML</strong> entre dois delimitadores <code class="bg-dark-700 px-1 rounded">---</code>. Logo abaixo, o <strong class="text-purple-400">corpo em Markdown</strong> com as instruções de comportamento. Essa separaçêo é o que todo agente compatível espera encontrar.
       </p>
 <svg aria-label="Anatomia de um arquivo SKILL.md dividido em frontmatter YAML e corpo Markdown" class="w-full h-auto my-6" role="img" viewbox="0 0 600 200">
 <defs><filter id="g31"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs>
@@ -139,7 +139,7 @@ quando a skill dispara.</pre>
 <h2 class="text-2xl font-bold">🏷️ Campo name</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O <code class="bg-dark-700 px-1 rounded">name</code> é o identificador único da skill. Convenção fixa: <strong class="text-purple-400">kebab-case</strong> (palavras separadas por hífen), tudo em <strong class="text-purple-400">minúsculas</strong>, e normalmente igual ao nome da pasta que contém o SKILL.md.
+        O <code class="bg-dark-700 px-1 rounded">name</code> é o identificador único da skill. Convençêo fixa: <strong class="text-purple-400">kebab-case</strong> (palavras separadas por hífen), tudo em <strong class="text-purple-400">minúsculas</strong>, e normalmente igual ao nome da pasta que contém o SKILL.md.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -163,7 +163,7 @@ quando a skill dispara.</pre>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Por que kebab-case importa</h3>
-<p class="text-neutral-300 text-sm">O name é usado em comandos, em logs e como chave única no agente. Espaços e maiúsculas quebram a referência, e nomes genéricos como <code class="bg-dark-700 px-1 rounded">skill</code> colidem com outras instalações. As skills mais instaladas do skills.sh — <code class="bg-dark-700 px-1 rounded">find-skills</code> (1,8M), <code class="bg-dark-700 px-1 rounded">frontend-design</code> (488k) — seguem todas o padrão.</p>
+<p class="text-neutral-300 text-sm">O name é usado em comandos, em logs e como chave única no agente. Espaços e maiúsculas quebram a referência, e nomes genéricos como <code class="bg-dark-700 px-1 rounded">skill</code> colidem com outras instalações. As skills mais instaladas do skills.sh — <code class="bg-dark-700 px-1 rounded">find-skills</code> (1,8M), <code class="bg-dark-700 px-1 rounded">frontend-design</code> (488k) — seguem todas o padrêo.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -179,7 +179,7 @@ quando a skill dispara.</pre>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <h4 class="font-bold text-red-400 mb-3">✗ Description vaga</h4>
 <p class="text-neutral-300 text-sm font-mono mb-3">"Ajuda com frontend."</p>
-<p class="text-neutral-400 text-sm">Não diz quando disparar. O agente quase nunca vai ativá-la.</p>
+<p class="text-neutral-400 text-sm">Nêo diz quando disparar. O agente quase nunca vai ativá-la.</p>
 </div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
 <h4 class="font-bold text-purple-400 mb-3">✓ Description com gatilho</h4>
@@ -188,7 +188,7 @@ quando a skill dispara.</pre>
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
-<p class="text-neutral-500 mb-3">Padrão recomendado:</p>
+<p class="text-neutral-500 mb-3">Padrêo recomendado:</p>
 <pre class="text-neutral-300 leading-relaxed">description: &lt;O QUE faz&gt;. Use this skill when
   &lt;QUANDO usar&gt; (examples include &lt;gatilhos
   concretos&gt;).</pre>
@@ -240,7 +240,7 @@ Focus on:
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Imperativo + porquê</h3>
-<p class="text-neutral-300 text-sm">Repare no exemplo acima: cada diretriz é um comando ("Focus on", "Choose", "Commit to") seguido do raciocínio. Isso é muito mais eficaz do que "VOCÊ DEVE SEMPRE..." — o agente absorve melhor quando entende a intenção.</p>
+<p class="text-neutral-300 text-sm">Repare no exemplo acima: cada diretriz é um comando ("Focus on", "Choose", "Commit to") seguido do raciocínio. Isso é muito mais eficaz do que "VOCÊ DEVE SEMPRE..." — o agente absorve melhor quando entende a intençêo.</p>
 </div>
 </section>
 <!-- Tópico 5 -->
@@ -250,7 +250,7 @@ Focus on:
 <h2 class="text-2xl font-bold">📁 Estrutura de pastas</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Uma skill profissional não é só o SKILL.md. Ao redor dele, três pastas convencionais organizam os recursos — e cada uma tem um propósito claro.
+        Uma skill profissional nêo é só o SKILL.md. Ao redor dele, três pastas convencionais organizam os recursos — e cada uma tem um propósito claro.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
@@ -264,7 +264,7 @@ Focus on:
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2"><code class="text-purple-400">references/</code> — docs sob demanda</h4>
-<p class="text-neutral-300 text-sm">Documentação extensa que o agente lê só quando precisa. Mantém o SKILL.md curto enquanto oferece profundidade quando necessário.</p>
+<p class="text-neutral-300 text-sm">Documentaçêo extensa que o agente lê só quando precisa. Mantém o SKILL.md curto enquanto oferece profundidade quando necessário.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -288,7 +288,7 @@ Focus on:
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica</h3>
-<p class="text-neutral-300 text-sm">Não crie pastas vazias por antecipação. Comece só com o SKILL.md e adicione <code class="bg-dark-700 px-1 rounded">scripts/</code> ou <code class="bg-dark-700 px-1 rounded">references/</code> quando o conteúdo realmente justificar — cada pasta é o Nível 3 do progressive disclosure.</p>
+<p class="text-neutral-300 text-sm">Nêo crie pastas vazias por antecipaçêo. Comece só com o SKILL.md e adicione <code class="bg-dark-700 px-1 rounded">scripts/</code> ou <code class="bg-dark-700 px-1 rounded">references/</code> quando o conteúdo realmente justificar — cada pasta é o Nível 3 do progressive disclosure.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
@@ -298,18 +298,18 @@ Focus on:
 <h2 class="text-2xl font-bold">🔬 Exemplo mínimo vs real</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Para fechar, compare os extremos. Um SKILL.md mínimo cabe em 5 linhas. Já uma skill de produção — como a <strong class="text-purple-400">frontend-design</strong> da Anthropic (488.299 instalações) — carrega no frontmatter uma description rica em gatilhos.
+        Para fechar, compare os extremos. Um SKILL.md mínimo cabe em 5 linhas. Já uma skill de produçêo — como a <strong class="text-purple-400">frontend-design</strong> da Anthropic (488.299 instalações) — carrega no frontmatter uma description rica em gatilhos.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">Mínimo:</p>
 <pre class="text-neutral-300 leading-relaxed">---
 name: git-commit-style
 description: Formata mensagens de commit no
-  padrão Conventional Commits.
+  padrêo Conventional Commits.
 ---
 
 Sempre escreva commits no formato
-tipo(escopo): descrição.</pre>
+tipo(escopo): descriçêo.</pre>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">Real — frontmatter do anthropics/skills/frontend-design:</p>

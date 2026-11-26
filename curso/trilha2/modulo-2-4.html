@@ -98,7 +98,7 @@
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-<svg aria-label="Pipeline de criação de uma skill de alta qualidade: intent, description, escopo, polimento" class="w-full h-auto mb-12" role="img" viewbox="0 0 640 200">
+<svg aria-label="Pipeline de criaçêo de uma skill de alta qualidade: intent, description, escopo, polimento" class="w-full h-auto mb-12" role="img" viewbox="0 0 640 200">
 <defs>
 <filter id="g24"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
 <lineargradient id="l24" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3b82f6"></stop><stop offset="1" stop-color="#38bdf8"></stop></lineargradient>
@@ -133,8 +133,8 @@
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
-<h4 class="font-semibold text-white mb-1">O QUE faz (resultado, não atividade)</h4>
-<p class="text-neutral-300 text-sm">Abra com o resultado. frontend-design: "Create production-grade frontend interfaces". Não "ajuda com" — <em>entrega</em> algo.</p>
+<h4 class="font-semibold text-white mb-1">O QUE faz (resultado, nêo atividade)</h4>
+<p class="text-neutral-300 text-sm">Abra com o resultado. frontend-design: "Create production-grade frontend interfaces". Nêo "ajuda com" — <em>entrega</em> algo.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -148,12 +148,12 @@
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
 <h4 class="font-semibold text-white mb-1">Seja "pushy" (contra o subdisparo)</h4>
-<p class="text-neutral-300 text-sm">"Use when doing ANY task involving X." Claude erra por não acionar; uma description firme corrige isso — sem virar um aspirador que dispara em tudo.</p>
+<p class="text-neutral-300 text-sm">"Use when doing ANY task involving X." Claude erra por nêo acionar; uma description firme corrige isso — sem virar um aspirador que dispara em tudo.</p>
 </div>
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
-<p class="text-neutral-500 mb-3">anatomia de uma description forte (padrão supabase):</p>
+<p class="text-neutral-500 mb-3">anatomia de uma description forte (padrêo supabase):</p>
 <pre class="text-neutral-300 leading-relaxed whitespace-pre-wrap">[O QUE]  Use when doing ANY task involving Supabase.
 [QUANDO] Triggers: criar tabela, RLS policy, query Postgres,
          migrations, auth, edge functions, storage.
@@ -172,7 +172,7 @@
 <h2 class="text-2xl font-bold">🎯 Escopo atômico: uma responsabilidade</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Uma skill deve fazer <strong class="text-blue-400">uma coisa</strong>. É o que faz vercel-react-best-practices (443k) e test-driven-development (107k) dispararem com precisão. Se a sua tenta abraçar tudo, ela absorve mal no contexto, dispara errado e não compõe.
+        Uma skill deve fazer <strong class="text-blue-400">uma coisa</strong>. É o que faz vercel-react-best-practices (443k) e test-driven-development (107k) dispararem com precisêo. Se a sua tenta abraçar tudo, ela absorve mal no contexto, dispara errado e nêo compõe.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -196,7 +196,7 @@
 </div>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Teste da frase única</h3>
-<p class="text-neutral-300 text-sm">Descreva a skill em uma frase sem usar "e" nem "também". Conseguiu? Atômica. A frase tem três cláusulas ligadas por "e"? São três skills. A Microsoft não fez "azure-everything" — fez foundry, ai, deploy, diagnostics e prepare.</p>
+<p class="text-neutral-300 text-sm">Descreva a skill em uma frase sem usar "e" nem "também". Conseguiu? Atômica. A frase tem três cláusulas ligadas por "e"? Sêo três skills. A Microsoft nêo fez "azure-everything" — fez foundry, ai, deploy, diagnostics e prepare.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -217,7 +217,7 @@
 <tr><td class="px-4 py-3 text-blue-400 font-bold">1</td><td class="px-4 py-3 text-white">description tem O QUE + QUANDO + gatilhos</td><td class="px-4 py-3 text-neutral-400">é o roteamento</td></tr>
 <tr><td class="px-4 py-3 text-blue-400 font-bold">2</td><td class="px-4 py-3 text-white">cabe em uma frase sem "e"</td><td class="px-4 py-3 text-neutral-400">escopo atômico</td></tr>
 <tr><td class="px-4 py-3 text-blue-400 font-bold">3</td><td class="px-4 py-3 text-white">corpo &lt;500 linhas, imperativo</td><td class="px-4 py-3 text-neutral-400">absorve no contexto</td></tr>
-<tr><td class="px-4 py-3 text-blue-400 font-bold">4</td><td class="px-4 py-3 text-white">explica o PORQUÊ, não só MUSTs</td><td class="px-4 py-3 text-neutral-400">o agente generaliza melhor</td></tr>
+<tr><td class="px-4 py-3 text-blue-400 font-bold">4</td><td class="px-4 py-3 text-white">explica o PORQUÊ, nêo só MUSTs</td><td class="px-4 py-3 text-neutral-400">o agente generaliza melhor</td></tr>
 <tr><td class="px-4 py-3 text-blue-400 font-bold">5</td><td class="px-4 py-3 text-white">rodou 2–3 test prompts realistas</td><td class="px-4 py-3 text-neutral-400">prova que dispara e ajuda</td></tr>
 <tr><td class="px-4 py-3 text-blue-400 font-bold">6</td><td class="px-4 py-3 text-white">scripts repetidos extraídos p/ bundled</td><td class="px-4 py-3 text-neutral-400">nível 3 sob demanda</td></tr>
 <tr><td class="px-4 py-3 text-blue-400 font-bold">7</td><td class="px-4 py-3 text-white">nome autoexplicativo</td><td class="px-4 py-3 text-neutral-400">descoberta clara</td></tr>
@@ -233,7 +233,7 @@
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">💡</span> Polimento ≠ mais texto</h3>
-<p class="text-neutral-300 text-sm">Polir uma skill é quase sempre <strong>remover</strong>: cortar instrução redundante, mover detalhe para bundled resources, apertar a description. Skill enxuta dispara melhor e custa menos contexto.</p>
+<p class="text-neutral-300 text-sm">Polir uma skill é quase sempre <strong>remover</strong>: cortar instruçêo redundante, mover detalhe para bundled resources, apertar a description. Skill enxuta dispara melhor e custa menos contexto.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -243,7 +243,7 @@
 <h2 class="text-2xl font-bold">🔁 Antes / Depois: uma skill fraca → forte</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O caso clássico. Mesma intenção ("ajudar com SQL"), duas execuções. À esquerda, o que ninguém instala. À direita, o padrão supabase-postgres-best-practices (203k).
+        O caso clássico. Mesma intençêo ("ajudar com SQL"), duas execuções. À esquerda, o que ninguém instala. À direita, o padrêo supabase-postgres-best-practices (203k).
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -254,7 +254,7 @@ description: Helps with SQL and
   databases and queries and more.</pre>
 </div>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Sem o QUANDO — o agente não sabe disparar</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Sem o QUANDO — o agente nêo sabe disparar</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"and more" = escopo infinito</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Nome genérico, fonte desconhecida</span></li>
 </ul>
@@ -278,7 +278,7 @@ description: Use when writing or
 </div>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que mudou de verdade</h3>
-<p class="text-neutral-300 text-sm">Nada do conteúdo técnico — só o <strong>roteamento</strong> e o <strong>foco</strong>. A versão forte dispara nos casos certos, não dispara nos errados, e diz exatamente o que entrega. É a diferença entre <em>parecer</em> útil e <em>ser</em> usada.</p>
+<p class="text-neutral-300 text-sm">Nada do conteúdo técnico — só o <strong>roteamento</strong> e o <strong>foco</strong>. A versêo forte dispara nos casos certos, nêo dispara nos errados, e diz exatamente o que entrega. É a diferença entre <em>parecer</em> útil e <em>ser</em> usada.</p>
 </div>
 </section>
 <!-- Tópico 5 -->
@@ -294,10 +294,10 @@ description: Use when writing or
 <p class="text-neutral-500 mb-3">template (cole no frontmatter):</p>
 <pre class="text-neutral-300 leading-relaxed whitespace-pre-wrap">name: [nome-autoexplicativo-em-kebab]
 description: [VERBO de resultado] [o que entrega].
-  Use this skill when [situação principal]
+  Use this skill when [situaçêo principal]
   (examples include [ex1], [ex2], [ex3]).
   Triggers: [gatilho1], [gatilho2], [gatilho3].
-  [Diferencial: o que ela garante e outras não].</pre>
+  [Diferencial: o que ela garante e outras nêo].</pre>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">exemplo preenchido (skill de migrations):</p>
@@ -311,17 +311,17 @@ description: Generate and review reversible database
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">💡</span> Calibre os triggers</h3>
-<p class="text-neutral-300 text-sm">Liste 3–5 gatilhos que <strong>devem</strong> acionar e pense em 2–3 near-misses parecidos que <strong>não</strong> devem. Se a description não distingue os dois grupos, ela vai disparar errado — tema do módulo 2.5.</p>
+<p class="text-neutral-300 text-sm">Liste 3–5 gatilhos que <strong>devem</strong> acionar e pense em 2–3 near-misses parecidos que <strong>nêo</strong> devem. Se a description nêo distingue os dois grupos, ela vai disparar errado — tema do módulo 2.5.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
 <section class="mb-16" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">🚦 O loop completo de criação</h2>
+<h2 class="text-2xl font-bold">🚦 O loop completo de criaçêo</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Juntando tudo: criar uma skill de qualidade é iterativo, não um chute. Capture a intenção, escreva, teste contra baseline, generalize do feedback e otimize a description. Repita até disparar certo.
+        Juntando tudo: criar uma skill de qualidade é iterativo, nêo um chute. Capture a intençêo, escreva, teste contra baseline, generalize do feedback e otimize a description. Repita até disparar certo.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
@@ -343,7 +343,7 @@ description: Generate and review reversible database
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">💡</span> Onde aprofundar</h3>
-<p class="text-neutral-300 text-sm">A anatomia completa do SKILL.md está na Trilha 3, e o loop de criação detalhado na Trilha 4. Aqui você já tem o suficiente para uma primeira skill que <em>parece e é</em> de qualidade.</p>
+<p class="text-neutral-300 text-sm">A anatomia completa do SKILL.md está na Trilha 3, e o loop de criaçêo detalhado na Trilha 4. Aqui você já tem o suficiente para uma primeira skill que <em>parece e é</em> de qualidade.</p>
 </div>
 </section>
 <!-- Resumo -->
@@ -354,12 +354,12 @@ description: Generate and review reversible database
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Description que dispara</strong><span class="text-neutral-400"> — o QUE (resultado) + o QUANDO (gatilhos) + ser "pushy" contra o subdisparo.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Escopo atômico</strong><span class="text-neutral-400"> — uma responsabilidade; passa no teste da frase sem "e". Quebre o que for grande.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Checklist de 7 itens</strong><span class="text-neutral-400"> — description, escopo, &lt;500 linhas, porquê, test prompts, scripts, nome óbvio.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Antes/depois</strong><span class="text-neutral-400"> — fraca vira forte mudando só roteamento e foco, não o conteúdo técnico.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Template + loop</strong><span class="text-neutral-400"> — molde de description pronto e o ciclo iterativo de criação e otimização.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Antes/depois</strong><span class="text-neutral-400"> — fraca vira forte mudando só roteamento e foco, nêo o conteúdo técnico.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Template + loop</strong><span class="text-neutral-400"> — molde de description pronto e o ciclo iterativo de criaçêo e otimizaçêo.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-blue-400 mb-2">Próximo:</h3>
-<p class="text-neutral-300">Módulo 2.5 — 🚀 Dicas Avançadas: Sinais que Só os Experts Veem. Precisão de triggering, economia de tokens, ler transcripts, pass-rate de evals e por que uma skill popular ainda pode ser ruim.</p>
+<p class="text-neutral-300">Módulo 2.5 — 🚀 Dicas Avançadas: Sinais que Só os Experts Veem. Precisêo de triggering, economia de tokens, ler transcripts, pass-rate de evals e por que uma skill popular ainda pode ser ruim.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 2</a>

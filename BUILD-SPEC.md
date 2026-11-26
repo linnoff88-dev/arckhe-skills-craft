@@ -1,12 +1,12 @@
 # BUILD-SPEC — Curso "Criando Agent Skills" (formato INEMA.CLUB)
 
-Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga este spec ao pé da letra. Não invente estrutura nova — copie os esqueletos abaixo e preencha o conteúdo.
+Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga este spec ao pé da letra. Nêo invente estrutura nova — copie os esqueletos abaixo e preencha o conteúdo.
 
 ## Identidade do curso
 - Título curto (nav/logo): `Criando Skills` · emoji `🛠️`
 - Título completo: "Criando Agent Skills — Do Catálogo à Sua Primeira Skill"
 - Footer (todas as páginas): `Criando Agent Skills · <a href="https://inema.club" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 2026 · Dados coletados do skills.sh`
-- Idioma: PT-BR. Tom: direto, técnico, sem encheção.
+- Idioma: PT-BR. Tom: direto, técnico, sem encheçêo.
 
 ## Trilhas e cores (Tailwind)
 | Trilha | Slug | Tema | Cor | accent (texto/bg/border/gradiente) |
@@ -16,10 +16,10 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
 | T3 | trilha3 | Anatomia de uma Skill | purple | text-purple-400 / bg-purple-500/20 / border-purple-500/30 / from-purple-900/30 |
 | T4 | trilha4 | Como Criar (o loop) | amber | text-amber-400 / bg-amber-500/20 / border-amber-500/30 / from-amber-900/30 |
 | T5 | trilha5 | O Que Pensar | teal | text-teal-400 / bg-teal-500/20 / border-teal-500/30 / from-teal-900/30 |
-| botão "próximo" usa a cor da PRÓXIMA trilha. Cor secundária dos SVGs = ciano `#38bdf8`. |
+| botêo "próximo" usa a cor da PRÓXIMA trilha. Cor secundária dos SVGs = ciano `#38bdf8`. |
 
 ## Regras OBRIGATÓRIAS (checklist INEMA)
-1. Botões de ação alinhados à ESQUERDA: `flex justify-start`.
+1. Botões de açêo alinhados à ESQUERDA: `flex justify-start`.
 2. Indicador de tópico = número em círculo `<span class="w-6 h-6 rounded-full ...">1</span>` (NUNCA seta ▶).
 3. No index, cada tópico expansível tem 3 seções: **O que é / Por que aprender / Conceitos-chave**.
 4. Link INEMA.CLUB presente em TODAS as páginas com `text-sky-400`.
@@ -27,12 +27,12 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
 6. Título do módulo `text-2xl font-bold` (h3 nos cards; h1 `text-3xl sm:text-4xl` no header do módulo).
 7. Cores corretas da trilha em tudo.
 8. Theme toggle funcionando (use o JS deste spec).
-9. No index da trilha: CADA card de módulo tem `<a href="modulo-X-Y.html" ...>Ver Completo</a>` + botão `Ver em Modal`.
+9. No index da trilha: CADA card de módulo tem `<a href="modulo-X-Y.html" ...>Ver Completo</a>` + botêo `Ver em Modal`.
 10. MÍNIMO 6 tópicos por módulo (no index expansível E na página do módulo: 6 seções `topico-N`).
-11. **Mapa da trilha** OBRIGATÓRIO no index: `<h2>Mapa da trilha</h2>` + grid de cards-âncora. Cada card: header `justify-between` (X.Y esq + duração dir) + emoji+título + subtítulo PUNCHY. NÃO usar "Navegação Rápida".
+11. **Mapa da trilha** OBRIGATÓRIO no index: `<h2>Mapa da trilha</h2>` + grid de cards-âncora. Cada card: header `justify-between` (X.Y esq + duraçêo dir) + emoji+título + subtítulo PUNCHY. NêO usar "Navegaçêo Rápida".
 12. NAV completo em TODAS as páginas (use o bloco deste spec). Trilha ativa destacada.
 13. PROFUNDIDADE módulo: 6-8 seções com VARIEDADE (≥2 grids ✓/✗, ≥1 timeline/lista numerada, ≥2 tip boxes, ≥1 code box). ~400-700 linhas.
-14. Bordas suavizadas dark já estão no CSS (border-dark-600 + divide).
+14. Bordas suavizadas dark já estêo no CSS (border-dark-600 + divide).
 15. Divisor "Conteúdo detalhado": h2 simples se usar.
 16. SVG futurista: ≥1 diagrama SVG inline por MÓDULO (cor da trilha + ciano, glow, `role="img"`+`aria-label`, `w-full h-auto`) e 1 hero SVG no index da trilha.
 
@@ -171,7 +171,7 @@ Header:
       <h1 class="text-3xl sm:text-4xl font-bold mb-4">{EMOJI} {TÍTULO}</h1>
       <p class="text-lg text-neutral-400 max-w-3xl">{SUBTÍTULO}</p>
       <!-- HERO SVG da trilha aqui (w-full h-auto max-w-2xl my-6) -->
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl"> <!-- 4 stat boxes: Módulos / Tópicos / Duração / Nível --> </div>
+      <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl"> <!-- 4 stat boxes: Módulos / Tópicos / Duraçêo / Nível --> </div>
     </div>
   </header>
 ```
@@ -259,7 +259,7 @@ Header (com 4 stat boxes: Tópicos / Minutos / Nível / Tipo):
     </div>
   </header>
 ```
-Seção de tópico (repita 6-8x, VARIE os componentes internos — não repita o mesmo molde):
+Seçêo de tópico (repita 6-8x, VARIE os componentes internos — nêo repita o mesmo molde):
 ```html
   <section id="topico-1" class="mb-16">
     <div class="flex items-center space-x-4 mb-6">
@@ -280,7 +280,7 @@ Componentes prontos para variar:
 
 SVG ilustrativo (≥1 por módulo, inline, no meio do conteúdo):
 ```html
-  <svg viewBox="0 0 600 200" role="img" aria-label="{descrição}" class="w-full h-auto my-6">
+  <svg viewBox="0 0 600 200" role="img" aria-label="{descriçêo}" class="w-full h-auto my-6">
     <defs><filter id="g{N}{Y}"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
     <!-- formas com fill/stroke da cor da trilha (ex emerald #10b981, blue #3b82f6, purple #a855f7, amber #f59e0b, teal #14b8a6) + ciano #38bdf8; opacity baixa nos fills; filter glow nas linhas -->
   </svg>
@@ -290,7 +290,7 @@ Resumo + nav (fim):
   <section class="mb-12">
     <div class="bg-gradient-to-br from-{COR}-900/40 via-dark-800 to-dark-800 rounded-xl border border-{COR}-500/30 p-8">
       <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo</h2>
-      <div class="space-y-4 mb-8"> <!-- 5-6 itens: ✓ + <strong>ponto</strong> + explicação --> </div>
+      <div class="space-y-4 mb-8"> <!-- 5-6 itens: ✓ + <strong>ponto</strong> + explicaçêo --> </div>
       <div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-{COR}-400 mb-2">Próximo:</h3><p class="text-neutral-300">{próximo módulo ou trilha}</p></div>
       <div class="flex flex-col sm:flex-row gap-4">
         <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar para Trilha N</a>
@@ -304,7 +304,7 @@ Resumo + nav (fim):
 - Catálogo: **39.366 skills**, **5.075 repos fonte**, **53,9M instalações somadas**, 16 grupos.
 - Lei de potência: 60,2% têm <100 installs; 30,8% entre 100-999; 7,7% entre 1k-9,9k; 1,1% entre 10k-99k; só **0,3% (131 skills)** têm 100k+. As **top 100 = 43,7%** de todos os installs.
 - TOP geral: find-skills 1.802.925 (vercel-labs/skills) · frontend-design 488.299 (anthropics/skills) · vercel-react-best-practices 443.261 (vercel-labs/agent-skills) · microsoft-foundry 360.755 · azure-ai 358.744 · web-design-guidelines 358.627 (vercel-labs/agent-skills).
-- Grupos por volume de instalação (count / installs): AI/LLM/Agents 12.693 / 12,9M · Web&Frontend 4.694 / 4,5M · DevOps&Cloud 907 / 8,3M · Dev Tooling&Code 796 / 4,4M · Marketing&SEO 582 / 2,3M · Media&Creative 550 / 1,85M · Docs&Content 364 / 1,49M · Backend&APIs 2.685 / 1,38M · Automation&Workflows 336 / 1,03M · Data&Databases 1.385 / 0,79M · Security 512 / 0,70M · Testing&QA 1.339 / 0,60M · Office&Files 249 / 0,24M · Finance&Business 310 / 0,21M · Productivity&PM 92 / 0,21M.
+- Grupos por volume de instalaçêo (count / installs): AI/LLM/Agents 12.693 / 12,9M · Web&Frontend 4.694 / 4,5M · DevOps&Cloud 907 / 8,3M · Dev Tooling&Code 796 / 4,4M · Marketing&SEO 582 / 2,3M · Media&Creative 550 / 1,85M · Docs&Content 364 / 1,49M · Backend&APIs 2.685 / 1,38M · Automation&Workflows 336 / 1,03M · Data&Databases 1.385 / 0,79M · Security 512 / 0,70M · Testing&QA 1.339 / 0,60M · Office&Files 249 / 0,24M · Finance&Business 310 / 0,21M · Productivity&PM 92 / 0,21M.
 - Exemplos por grupo (nome / installs / fonte):
   - Web: frontend-design 488k anthropics · vercel-react-best-practices 443k vercel-labs · web-design-guidelines 358k vercel-labs.
   - Data: supabase-postgres-best-practices 203k supabase · supabase 99k · neon-postgres 38k neondatabase.
@@ -315,5 +315,5 @@ Resumo + nav (fim):
   - Office: lark-slides 139k larksuite/cli · slidev antfu/skills.
   - Finance: stripe-best-practices stripe/ai.
 - Anatomia (canônico Anthropic skill-creator): SKILL.md = frontmatter YAML (name + description obrigatórios) + corpo Markdown. Progressive disclosure 3 níveis: (1) metadata name+description ~100 palavras sempre no contexto; (2) corpo do SKILL.md <500 linhas quando dispara; (3) bundled resources (scripts/ references/ assets/) sob demanda. description é o gatilho — deve dizer O QUE faz E QUANDO usar, e ser um pouco "pushy" (Claude tende a subdisparar). Imperativo, explique o PORQUÊ em vez de MUSTs em maiúscula.
-- Loop de criação: capturar intent → escrever draft → 2-3 test prompts realistas → rodar com-skill vs baseline → avaliar (qualitativo + evals quantitativos) → generalizar do feedback, manter enxuto, explicar o porquê, extrair scripts repetidos → repetir → otimizar description (queries should-trigger / should-not-trigger, near-misses) → empacotar.
+- Loop de criaçêo: capturar intent → escrever draft → 2-3 test prompts realistas → rodar com-skill vs baseline → avaliar (qualitativo + evals quantitativos) → generalizar do feedback, manter enxuto, explicar o porquê, extrair scripts repetidos → repetir → otimizar description (queries should-trigger / should-not-trigger, near-misses) → empacotar.
 ```

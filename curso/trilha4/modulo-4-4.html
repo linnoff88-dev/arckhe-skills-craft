@@ -106,7 +106,7 @@
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <!-- SVG: pipeline ponta a ponta -->
-<svg aria-label="Pipeline de criação: intent, draft, test prompts, evals.json, rodar, iterar" class="w-full h-auto my-2 max-w-3xl mx-auto" role="img" viewbox="0 0 660 200">
+<svg aria-label="Pipeline de criaçêo: intent, draft, test prompts, evals.json, rodar, iterar" class="w-full h-auto my-2 max-w-3xl mx-auto" role="img" viewbox="0 0 660 200">
 <defs>
 <filter id="g44"><fegaussianblur result="b" stddeviation="2.6"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
 <marker id="ah44" markerheight="8" markerwidth="8" orient="auto" refx="5" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#38bdf8"></path></marker>
@@ -153,7 +153,7 @@
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Saída verificável → vale testar</h3>
-<p class="text-neutral-300 text-sm">A pergunta 4 decide o resto do walkthrough. Transformações de arquivo, extração de dados e geração de código têm saída objetiva — merecem evals. Skills de estilo/arte se avaliam só qualitativamente. Como o nosso caso é uma transformação de planilha, vamos full evals.</p>
+<p class="text-neutral-300 text-sm">A pergunta 4 decide o resto do walkthrough. Transformações de arquivo, extraçêo de dados e geraçêo de código têm saída objetiva — merecem evals. Skills de estilo/arte se avaliam só qualitativamente. Como o nosso caso é uma transformaçêo de planilha, vamos full evals.</p>
 </div>
 </section>
 <!-- Tópico 2 -->
@@ -182,16 +182,16 @@ nova coluna formatada como porcentagem.
 
 ## Passos
 1. Abra o .xlsx e identifique as colunas de receita e custo
-   (pergunte se ambíguo — não chute).
+   (pergunte se ambíguo — nêo chute).
 2. Crie a coluna "Margem" à direita, formatada como %.
-3. Preserve abas, fórmulas e formatação existentes.
+3. Preserve abas, fórmulas e formataçêo existentes.
 4. Salve mantendo o nome original com sufixo "-margem".</pre>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <h4 class="font-bold text-red-400 mb-4">✗ description fraca</h4>
 <p class="text-neutral-300 text-sm">"Mexe em planilhas de vendas."</p>
-<p class="text-neutral-400 text-xs mt-3">Vaga, não diz quando disparar, vai subdisparar.</p>
+<p class="text-neutral-400 text-xs mt-3">Vaga, nêo diz quando disparar, vai subdisparar.</p>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">✓ description pushy</h4>
@@ -237,7 +237,7 @@ nova coluna formatada como porcentagem.
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">🎯</span> Valide antes de rodar</h3>
-<p class="text-neutral-300 text-sm">Diga ao usuário: "Aqui estão os casos de teste que quero tentar. Estão certos ou quer adicionar mais?". Prompts ruins geram avaliação enganosa — esta confirmação é barata e evita rodar tudo à toa.</p>
+<p class="text-neutral-300 text-sm">Diga ao usuário: "Aqui estêo os casos de teste que quero tentar. Estêo certos ou quer adicionar mais?". Prompts ruins geram avaliaçêo enganosa — esta confirmaçêo é barata e evita rodar tudo à toa.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -247,7 +247,7 @@ nova coluna formatada como porcentagem.
 <h2 class="text-2xl font-bold">📊 Estágio 4 — Assertions verificáveis</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Enquanto as runs rodam (não fique parado), escreva as <strong class="text-amber-400">assertions</strong>: objetivamente verificáveis, com nomes descritivos, de preferência checadas por script. Cada test case ganha um <code>eval_metadata.json</code>.
+        Enquanto as runs rodam (nêo fique parado), escreva as <strong class="text-amber-400">assertions</strong>: objetivamente verificáveis, com nomes descritivos, de preferência checadas por script. Cada test case ganha um <code>eval_metadata.json</code>.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">eval_metadata.json — TEMPLATE pronto (com assertions):</p>
@@ -260,7 +260,7 @@ nova coluna formatada como porcentagem.
     "Coluna 'Margem' presente à direita das demais",
     "Coluna Margem formatada como porcentagem (%)",
     "Valores batem com (C - D) / C por linha",
-    "Abas e formatação originais preservadas"
+    "Abas e formataçêo originais preservadas"
   ]
 }</pre>
 </div>
@@ -290,7 +290,7 @@ nova coluna formatada como porcentagem.
 <h2 class="text-2xl font-bold">⚖️ Estágio 5 — Rodar com-skill vs baseline</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Para cada test case, dispare dois subagents <strong class="text-amber-400">no mesmo turno</strong>: um com a skill, um sem (baseline = sem skill, pois é skill nova). Organize a saída por iteração e por eval. Capture <code>total_tokens</code> e <code>duration_ms</code> da notificação assim que cada run terminar.
+        Para cada test case, dispare dois subagents <strong class="text-amber-400">no mesmo turno</strong>: um com a skill, um sem (baseline = sem skill, pois é skill nova). Organize a saída por iteraçêo e por eval. Capture <code>total_tokens</code> e <code>duration_ms</code> da notificaçêo assim que cada run terminar.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">estrutura do workspace + timing.json:</p>
@@ -300,7 +300,7 @@ nova coluna formatada como porcentagem.
     │   ├── with_skill/outputs/   ← saída com a skill
     │   ├── without_skill/outputs/ ← baseline
     │   └── timing.json
-    └── benchmark.json            ← gerado pela agregação
+    └── benchmark.json            ← gerado pela agregaçêo
 
 # timing.json
 { "total_tokens": 84852, "duration_ms": 23332,
@@ -308,7 +308,7 @@ nova coluna formatada como porcentagem.
 </div>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6">
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Por que no mesmo turno</h3>
-<p class="text-neutral-300 text-sm">Lance with_skill e without_skill juntos para terminarem por volta do mesmo tempo. Não rode os com-skill primeiro e volte depois para os baselines — isso introduz viés e dificulta comparar. O timing.json só pode ser capturado quando a notificação chega; processe cada uma na hora.</p>
+<p class="text-neutral-300 text-sm">Lance with_skill e without_skill juntos para terminarem por volta do mesmo tempo. Nêo rode os com-skill primeiro e volte depois para os baselines — isso introduz viés e dificulta comparar. O timing.json só pode ser capturado quando a notificaçêo chega; processe cada uma na hora.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
@@ -318,7 +318,7 @@ nova coluna formatada como porcentagem.
 <h2 class="text-2xl font-bold">🔁 Estágio 6 — Avaliar e iterar (timeline)</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Com tudo rodado, feche o loop. A timeline numerada abaixo é o ciclo do skill-creator, do grading até a próxima iteração.
+        Com tudo rodado, feche o loop. A timeline numerada abaixo é o ciclo do skill-creator, do grading até a próxima iteraçêo.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
@@ -331,20 +331,20 @@ nova coluna formatada como porcentagem.
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Abra o viewer ANTES de você julgar</h4><p class="text-neutral-300 text-sm"><code>generate_review.py</code> com <code>--benchmark</code>. Ponha os outputs na frente do humano primeiro. Não escreva HTML próprio.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Abra o viewer ANTES de você julgar</h4><p class="text-neutral-300 text-sm"><code>generate_review.py</code> com <code>--benchmark</code>. Ponha os outputs na frente do humano primeiro. Nêo escreva HTML próprio.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Leia o feedback e generalize</h4><p class="text-neutral-300 text-sm">Feedback vazio = ok. Onde há reclamação, generalize a correção (não overfit), mantenha enxuto, explique o porquê. Script repetido nas 3 runs → bundle em <code>scripts/</code>.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Leia o feedback e generalize</h4><p class="text-neutral-300 text-sm">Feedback vazio = ok. Onde há reclamaçêo, generalize a correçêo (nêo overfit), mantenha enxuto, explique o porquê. Script repetido nas 3 runs → bundle em <code>scripts/</code>.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">5</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Rerode em iteration-2 e repita</h4><p class="text-neutral-300 text-sm">Nova iteração com baselines, reviewer com <code>--previous-workspace</code>. Pare quando o usuário estiver feliz, o feedback vazio ou sem progresso.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Rerode em iteration-2 e repita</h4><p class="text-neutral-300 text-sm">Nova iteraçêo com baselines, reviewer com <code>--previous-workspace</code>. Pare quando o usuário estiver feliz, o feedback vazio ou sem progresso.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> O que aconteceu no nosso caso</h3>
-<p class="text-neutral-300 text-sm">As 3 runs com-skill escreveram um <code>calc_margem.py</code> quase idêntico — sinal forte de bundlar. Na iteração 2, o script foi para <code>scripts/</code> e o SKILL.md passou a apontá-lo. Resultado: pass_rate subiu e os tokens por run caíram, porque cada invocação parou de reinventar a roda.</p>
+<p class="text-neutral-300 text-sm">As 3 runs com-skill escreveram um <code>calc_margem.py</code> quase idêntico — sinal forte de bundlar. Na iteraçêo 2, o script foi para <code>scripts/</code> e o SKILL.md passou a apontá-lo. Resultado: pass_rate subiu e os tokens por run caíram, porque cada invocaçêo parou de reinventar a roda.</p>
 </div>
 </section>
 <!-- Resumo -->
@@ -355,12 +355,12 @@ nova coluna formatada como porcentagem.
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Intent em 4 perguntas</strong><span class="text-neutral-400"> — habilita o quê, quando dispara, formato, vale testar (saída verificável → sim)</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Draft com description pushy</strong><span class="text-neutral-400"> — o que faz E quando usar, corpo imperativo com o porquê</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">evals.json sem assertions, depois eval_metadata.json com</strong><span class="text-neutral-400"> — templates JSON prontos para copiar</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Rodar com-skill vs baseline no mesmo turno</strong><span class="text-neutral-400"> — workspace por iteração e eval, capturar timing.json na hora</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Rodar com-skill vs baseline no mesmo turno</strong><span class="text-neutral-400"> — workspace por iteraçêo e eval, capturar timing.json na hora</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Grade → agregue → viewer → feedback → itere</strong><span class="text-neutral-400"> — script repetido vira bundle, e o loop fecha</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-amber-400 mb-2">Próximo:</h3>
-<p class="text-neutral-300">Módulo 4.5 — 🚀 Dicas Avançadas: Otimização de Description e Benchmark — split 60/40, near-misses, blind comparison e como ler o benchmark sem se enganar.</p>
+<p class="text-neutral-300">Módulo 4.5 — 🚀 Dicas Avançadas: Otimizaçêo de Description e Benchmark — split 60/40, near-misses, blind comparison e como ler o benchmark sem se enganar.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 4</a>

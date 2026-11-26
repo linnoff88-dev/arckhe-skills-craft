@@ -83,7 +83,7 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MÓDULO 5.6 · FINAL DO CURSO</span>
 <h1 class="text-3xl sm:text-4xl font-bold mb-4">📏 Regras 2026: a skill para os modelos 5.5</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">O curso já cobriu o limite de 500 linhas, a divulgação progressiva e os hooks. Esta aula traz o que faltava: graus de liberdade, descrição em terceira pessoa, os limites de 1.024 e 1.536 caracteres, hooks dentro da própria skill, o corte de 5.000 tokens na compactação, o que não pedir ao modelo e como auditar tudo com um validador aberto.</p>
+<p class="text-lg text-neutral-400 max-w-3xl">O curso já cobriu o limite de 500 linhas, a divulgaçêo progressiva e os hooks. Esta aula traz o que faltava: graus de liberdade, descriçêo em terceira pessoa, os limites de 1.024 e 1.536 caracteres, hooks dentro da própria skill, o corte de 5.000 tokens na compactaçêo, o que nêo pedir ao modelo e como auditar tudo com um validador aberto.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">8</div><div class="text-xs text-neutral-400">Tópicos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">45</div><div class="text-xs text-neutral-400">Minutos</div></div>
@@ -97,20 +97,20 @@
 <section class="mb-16" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">🧭 O que mudou (e o que não mudou)</h2>
+<h2 class="text-2xl font-bold">🧭 O que mudou (e o que nêo mudou)</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Circulam vídeos sobre "10 regras novas" para skills. Conferindo na página oficial de boas práticas da Anthropic e nos docs do Claude Code, as regras de base estão estáveis há cerca de um ano. O que mudou foram os <strong class="text-teal-400">modelos</strong>: Fable 5, Opus 5.5 e Sonnet 5.5 seguem instruções mais à risca e fazem mais sozinhos. Uma skill escrita para modelos antigos continua funcionando, mas pode carregar peso morto.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Circulam vídeos sobre "10 regras novas" para skills. Conferindo na página oficial de boas práticas da Anthropic e nos docs do Claude Code, as regras de base estêo estáveis há cerca de um ano. O que mudou foram os <strong class="text-teal-400">modelos</strong>: Fable 5, Opus 5.5 e Sonnet 5.5 seguem instruções mais à risca e fazem mais sozinhos. Uma skill escrita para modelos antigos continua funcionando, mas pode carregar peso morto.</p>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-6">
 <h3 class="font-bold text-teal-400 mb-3">O aviso que motivou esta aula</h3>
-<p class="text-neutral-300 text-sm leading-relaxed">Segundo o guia de prompting citado pelo skill-creator-plus, skills escritas para modelos antigos costumam ser <strong class="text-white">prescritivas demais</strong> para os modelos 5.5 e podem piorar o resultado. Não localizamos essa frase na documentação oficial; trate-a como hipótese a testar na sua skill, não como regra da Anthropic.</p>
+<p class="text-neutral-300 text-sm leading-relaxed">Segundo o guia de prompting citado pelo skill-creator-plus, skills escritas para modelos antigos costumam ser <strong class="text-white">prescritivas demais</strong> para os modelos 5.5 e podem piorar o resultado. Nêo localizamos essa frase na documentaçêo oficial; trate-a como hipótese a testar na sua skill, nêo como regra da Anthropic.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-bold text-white mb-3">Estável (já visto no curso)</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>SKILL.md abaixo de 500 linhas</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Divulgação progressiva em três níveis</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Descrição como gatilho: o que faz e quando usar</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Divulgaçêo progressiva em três níveis</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">›</span><span>Descriçêo como gatilho: o que faz e quando usar</span></li>
 </ul>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
@@ -129,7 +129,7 @@
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span>
 <h2 class="text-2xl font-bold">🎚️ Graus de liberdade: alto, médio, baixo</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">A doc oficial pede para ajustar o quanto você especifica cada passo ao quanto ele é frágil. A imagem da Anthropic: numa ponte estreita com penhasco dos dois lados, corrimão exato; num campo aberto, uma direção e confiança. O teste para cada passo é uma pergunta: <strong class="text-white">"e se o agente fizer este passo de outro jeito?"</strong></p>
+<p class="text-neutral-300 mb-6 leading-relaxed">A doc oficial pede para ajustar o quanto você especifica cada passo ao quanto ele é frágil. A imagem da Anthropic: numa ponte estreita com penhasco dos dois lados, corrimêo exato; num campo aberto, uma direçêo e confiança. O teste para cada passo é uma pergunta: <strong class="text-white">"e se o agente fizer este passo de outro jeito?"</strong></p>
 <svg aria-label="Três graus de liberdade: alto como campo aberto, médio como trilha com modelo, baixo como ponte estreita com script exato" class="w-full h-auto my-6" role="img" viewbox="0 0 600 210">
 <defs><filter id="g56"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs>
 <rect fill="#14b8a6" fill-opacity="0.08" filter="url(#g56)" height="150" rx="14" stroke="#14b8a6" stroke-width="2" width="180" x="10" y="20"></rect>
@@ -146,25 +146,25 @@
 <text fill="#5eead4" font-size="16" font-weight="700" text-anchor="middle" x="100" y="50">ALTO</text>
 <text fill="#7dd3fc" font-size="16" font-weight="700" text-anchor="middle" x="300" y="50">MÉDIO</text>
 <text fill="#5eead4" font-size="16" font-weight="700" text-anchor="middle" x="500" y="50">BAIXO</text>
-<text fill="#9ca3af" font-size="13" text-anchor="middle" x="100" y="195">instrução simples</text>
-<text fill="#9ca3af" font-size="13" text-anchor="middle" x="300" y="195">modelo com variação</text>
+<text fill="#9ca3af" font-size="13" text-anchor="middle" x="100" y="195">instruçêo simples</text>
+<text fill="#9ca3af" font-size="13" text-anchor="middle" x="300" y="195">modelo com variaçêo</text>
 <text fill="#9ca3af" font-size="13" text-anchor="middle" x="500" y="195">script exato</text>
 </svg>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <h4 class="font-bold text-teal-400 mb-2">Alto</h4>
-<p class="text-neutral-300 text-sm mb-2">Instrução em texto simples. Várias abordagens servem e o contexto decide.</p>
-<p class="text-neutral-400 text-sm">Ex.: revisão de código, brainstorm.</p>
+<p class="text-neutral-300 text-sm mb-2">Instruçêo em texto simples. Várias abordagens servem e o contexto decide.</p>
+<p class="text-neutral-400 text-sm">Ex.: revisêo de código, brainstorm.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <h4 class="font-bold text-sky-400 mb-2">Médio</h4>
-<p class="text-neutral-300 text-sm mb-2">Modelo ou script com parâmetros. Há um padrão preferido e alguma variação é aceitável.</p>
+<p class="text-neutral-300 text-sm mb-2">Modelo ou script com parâmetros. Há um padrêo preferido e alguma variaçêo é aceitável.</p>
 <p class="text-neutral-400 text-sm">Ex.: relatório semanal.</p>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-5">
 <h4 class="font-bold text-teal-400 mb-2">Baixo</h4>
-<p class="text-neutral-300 text-sm mb-2">Script exato, com poucos ou nenhum parâmetro. Erro custa caro ou a ordem não pode mudar.</p>
-<p class="text-neutral-400 text-sm">Ex.: fatura, imposto, migração de banco.</p>
+<p class="text-neutral-300 text-sm mb-2">Script exato, com poucos ou nenhum parâmetro. Erro custa caro ou a ordem nêo pode mudar.</p>
+<p class="text-neutral-400 text-sm">Ex.: fatura, imposto, migraçêo de banco.</p>
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
@@ -181,19 +181,19 @@ Do not add flags.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica</h3>
-<p class="text-neutral-300 text-sm">Uma skill boa costuma misturar os três: escrita livre, resumo com modelo, publicação travada num comando. Travar tudo deixa a skill rígida; soltar tudo deixa o passo arriscado ao acaso.</p>
+<p class="text-neutral-300 text-sm">Uma skill boa costuma misturar os três: escrita livre, resumo com modelo, publicaçêo travada num comando. Travar tudo deixa a skill rígida; soltar tudo deixa o passo arriscado ao acaso.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
 <section class="mb-16" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">✍️ Descrição em terceira pessoa, com "quando usar"</h2>
+<h2 class="text-2xl font-bold">✍️ Descriçêo em terceira pessoa, com "quando usar"</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">A descrição é a única parte da skill que o agente vê antes de escolhê-la, entre possivelmente mais de cem. Ela entra no prompt de sistema, por isso a doc pede <strong class="text-teal-400">terceira pessoa</strong> ("Cria faturas…", não "Eu crio…" nem "Você pode…"). Formato: uma frase sobre o que a skill faz, depois "Use quando…" com as situações e as palavras que a pessoa realmente digita. E só o que o modelo não sabe: não explique o que é uma fatura.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">A descriçêo é a única parte da skill que o agente vê antes de escolhê-la, entre possivelmente mais de cem. Ela entra no prompt de sistema, por isso a doc pede <strong class="text-teal-400">terceira pessoa</strong> ("Cria faturas…", nêo "Eu crio…" nem "Você pode…"). Formato: uma frase sobre o que a skill faz, depois "Use quando…" com as situações e as palavras que a pessoa realmente digita. E só o que o modelo nêo sabe: nêo explique o que é uma fatura.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-3">✗ Não dispara bem</h4>
+<h4 class="font-bold text-red-400 mb-3">✗ Nêo dispara bem</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"Eu ajudo com faturas." (primeira pessoa, sem quando)</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"Você pode usar para documentos." (vago)</span></li>
@@ -215,7 +215,7 @@ Do not add flags.</pre>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <div class="text-3xl font-bold text-sky-400 mb-1">1.536 caracteres</div>
-<p class="text-neutral-300 text-sm">O Claude Code corta <code>description</code> + <code>when_to_use</code> somados nesse ponto da listagem de skills. O que passa disso o agente não lê.</p>
+<p class="text-neutral-300 text-sm">O Claude Code corta <code>description</code> + <code>when_to_use</code> somados nesse ponto da listagem de skills. O que passa disso o agente nêo lê.</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
@@ -229,7 +229,7 @@ Do not add flags.</pre>
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span>
 <h2 class="text-2xl font-bold">🪝 Hooks no frontmatter da skill</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Texto é seguido com julgamento: pode ser pulado e, depois da compactação, só o começo da skill fica. "Nunca enviar fatura acima de R$ 50 mil sem aprovação" em caixa alta é seguido quase sempre. Hook é seguido sempre. A novidade é que a própria skill pode declarar seus hooks no frontmatter: eles <strong class="text-teal-400">registram quando a skill é chamada e ficam ativos o resto da sessão</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Texto é seguido com julgamento: pode ser pulado e, depois da compactaçêo, só o começo da skill fica. "Nunca enviar fatura acima de R$ 50 mil sem aprovaçêo" em caixa alta é seguido quase sempre. Hook é seguido sempre. A novidade é que a própria skill pode declarar seus hooks no frontmatter: eles <strong class="text-teal-400">registram quando a skill é chamada e ficam ativos o resto da sessêo</strong>.</p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">SKILL.md (Claude Code):</p>
 <pre class="text-neutral-300 leading-relaxed whitespace-pre-wrap">---
@@ -247,22 +247,22 @@ hooks:
 </div>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">1</span><div><h4 class="font-semibold text-white">A skill é chamada</h4><p class="text-neutral-400 text-sm">Os hooks do frontmatter entram em vigor nesse momento.</p></div></div>
-<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">2</span><div><h4 class="font-semibold text-white">O evento acontece</h4><p class="text-neutral-400 text-sm">Antes de cada comando Bash, o Claude Code roda o script, siga o agente a skill ou não.</p></div></div>
-<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">3</span><div><h4 class="font-semibold text-white">Até o fim da sessão</h4><p class="text-neutral-400 text-sm">O hook continua registrado. Use <code>once: true</code> no hook que só deve rodar na primeira vez que der certo.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">2</span><div><h4 class="font-semibold text-white">O evento acontece</h4><p class="text-neutral-400 text-sm">Antes de cada comando Bash, o Claude Code roda o script, siga o agente a skill ou nêo.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">3</span><div><h4 class="font-semibold text-white">Até o fim da sessêo</h4><p class="text-neutral-400 text-sm">O hook continua registrado. Use <code>once: true</code> no hook que só deve rodar na primeira vez que der certo.</p></div></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica</h3>
-<p class="text-neutral-300 text-sm">Julgamento fica no texto; linha dura vira hook. Hooks são só do Claude Code: no claude.ai, mantenha a regra em texto e perto do topo.</p>
+<p class="text-neutral-300 text-sm">Julgamento fica no texto; linha dura vira hook. Hooks sêo só do Claude Code: no claude.ai, mantenha a regra em texto e perto do topo.</p>
 </div>
 </section>
 <!-- Tópico 5 -->
 <section class="mb-16" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🗜️ Compactação: só os primeiros 5.000 tokens ficam</h2>
+<h2 class="text-2xl font-bold">🗜️ Compactaçêo: só os primeiros 5.000 tokens ficam</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Quando a conversa é compactada, o Claude Code reanexa só os <strong class="text-teal-400">primeiros 5.000 tokens</strong> de cada skill em uso. Uma regra importante lá no fim de um SKILL.md longo simplesmente some numa sessão comprida. Por isso a ordem do arquivo é ordem de importância.</p>
-<svg aria-label="Depois da compactação, só o topo da skill até 5.000 tokens volta ao contexto; o resto é descartado" class="w-full h-auto my-6" role="img" viewbox="0 0 600 120">
+<p class="text-neutral-300 mb-6 leading-relaxed">Quando a conversa é compactada, o Claude Code reanexa só os <strong class="text-teal-400">primeiros 5.000 tokens</strong> de cada skill em uso. Uma regra importante lá no fim de um SKILL.md longo simplesmente some numa sessêo comprida. Por isso a ordem do arquivo é ordem de importância.</p>
+<svg aria-label="Depois da compactaçêo, só o topo da skill até 5.000 tokens volta ao contexto; o resto é descartado" class="w-full h-auto my-6" role="img" viewbox="0 0 600 120">
 <defs><filter id="g56b"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs>
 <rect fill="#1f2937" height="44" rx="10" stroke="#4b5563" stroke-width="1.5" width="560" x="20" y="30"></rect>
 <rect fill="#14b8a6" fill-opacity="0.25" filter="url(#g56b)" height="44" rx="10" stroke="#14b8a6" stroke-width="2" width="250" x="20" y="30"></rect>
@@ -276,14 +276,14 @@ hooks:
 <h4 class="font-bold text-red-400 mb-3">✗ Ordem que perde regra</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>História do projeto e contexto geral no topo</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"Regras importantes" como última seção</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"Regras importantes" como última seçêo</span></li>
 </ul>
 </div>
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
 <h4 class="font-bold text-teal-400 mb-3">✓ Ordem que sobrevive</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Regras que não podem falhar logo no início</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Instruções permanentes ("confira a saída depois de cada mudança"), não passos de uma vez só</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Regras que nêo podem falhar logo no início</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Instruções permanentes ("confira a saída depois de cada mudança"), nêo passos de uma vez só</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Detalhe em references/, linkado direto do SKILL.md</span></li>
 </ul>
 </div>
@@ -293,9 +293,9 @@ hooks:
 <section class="mb-16" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">🚫 Não peça o raciocínio na resposta</h2>
+<h2 class="text-2xl font-bold">🚫 Nêo peça o raciocínio na resposta</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Instruções do tipo "escreva o seu raciocínio passo a passo" ou "transcreva o que você pensou" podem ser recusadas pelos modelos 5.5 (a recusa <code>reasoning_extraction</code>). A skill para no meio sem fazer o trabalho. Peça o resultado: a resposta, uma explicação curta dela ou o resumo das ações.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Instruções do tipo "escreva o seu raciocínio passo a passo" ou "transcreva o que você pensou" podem ser recusadas pelos modelos 5.5 (a recusa <code>reasoning_extraction</code>). A skill para no meio sem fazer o trabalho. Peça o resultado: a resposta, uma explicaçêo curta dela ou o resumo das ações.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <h4 class="font-bold text-red-400 mb-3">✗ Troque</h4>
@@ -315,10 +315,10 @@ hooks:
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6">
 <h4 class="font-semibold text-teal-400 mb-4">Os outros ajustes para modelos novos</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Corte o andaime, mas teste antes:</strong> passo a passo do que o modelo já sabe e bom senso repetido são candidatos a sair. Só uma execução com e outra sem a linha prova que era peso morto.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Dê o motivo:</strong> "abaixo de 1.536 caracteres, porque o Claude Code corta a listagem aí" deixa o modelo tratar o caso que a regra não previu.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Corte o andaime, mas teste antes:</strong> passo a passo do que o modelo já sabe e bom senso repetido sêo candidatos a sair. Só uma execuçêo com e outra sem a linha prova que era peso morto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Dê o motivo:</strong> "abaixo de 1.536 caracteres, porque o Claude Code corta a listagem aí" deixa o modelo tratar o caso que a regra nêo previu.</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Direcione em uma frase:</strong> caixa alta só para linha dura. Quando tudo grita, nada se destaca.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Verificação explícita:</strong> diga como e quando o trabalho é conferido; em execução longa, um subagente que não fez o trabalho confere contra a especificação.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">★</span><span><strong class="text-white">Verificaçêo explícita:</strong> diga como e quando o trabalho é conferido; em execuçêo longa, um subagente que nêo fez o trabalho confere contra a especificaçêo.</span></li>
 </ul>
 </div>
 </section>
@@ -328,7 +328,7 @@ hooks:
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span>
 <h2 class="text-2xl font-bold">☑️ Checklist copiada + "volte ao passo X"</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Para tarefa de muitos passos, a doc recomenda dar ao agente uma checklist que ele <strong class="text-teal-400">copia na própria resposta</strong> e vai marcando. Cada passo termina num "pronto quando…" que dá para conferir, e a lista diz para onde voltar quando uma checagem falha. Assim o agente não pula etapa nem declara vitória cedo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Para tarefa de muitos passos, a doc recomenda dar ao agente uma checklist que ele <strong class="text-teal-400">copia na própria resposta</strong> e vai marcando. Cada passo termina num "pronto quando…" que dá para conferir, e a lista diz para onde voltar quando uma checagem falha. Assim o agente nêo pula etapa nem declara vitória cedo.</p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">no SKILL.md:</p>
 <pre class="text-neutral-300 leading-relaxed whitespace-pre-wrap">Copy this checklist into your reply and tick each step:
@@ -342,7 +342,7 @@ If step 4 fails on the total, go back to step 2.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica</h3>
-<p class="text-neutral-300 text-sm">A checagem não precisa ser código: comparar o rascunho com o guia de estilo e listar cada desvio também é um loop de verificação. Rodar, corrigir o que falhou, repetir até passar.</p>
+<p class="text-neutral-300 text-sm">A checagem nêo precisa ser código: comparar o rascunho com o guia de estilo e listar cada desvio também é um loop de verificaçêo. Rodar, corrigir o que falhou, repetir até passar.</p>
 </div>
 </section>
 <!-- Tópico 8 -->
@@ -351,7 +351,7 @@ If step 4 fails on the total, go back to step 2.</pre>
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">8</span>
 <h2 class="text-2xl font-bold">🔎 Audite antes de reescrever</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Não reescreva skills de memória: meça. O projeto INEMA <a class="text-sky-400 hover:text-sky-300" href="https://github.com/inematds/auditar-skills" target="_blank">auditar-skills</a> é o espelho do <strong class="text-white">skill-creator-plus</strong> (RoboNuggets, licença MIT), com guia em português. O validador é Python puro, sem instalar nada e sem chamar API: checa a parte mecânica de todas as skills de uma pasta em cerca de um segundo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Nêo reescreva skills de memória: meça. O projeto INEMA <a class="text-sky-400 hover:text-sky-300" href="https://github.com/inematds/auditar-skills" target="_blank">auditar-skills</a> é o espelho do <strong class="text-white">skill-creator-plus</strong> (RoboNuggets, licença MIT), com guia em português. O validador é Python puro, sem instalar nada e sem chamar API: checa a parte mecânica de todas as skills de uma pasta em cerca de um segundo.</p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm overflow-x-auto">
 <p class="text-neutral-500 mb-3">dentro da pasta do auditar-skills:</p>
 <pre class="text-neutral-300 leading-relaxed whitespace-pre-wrap"><code>python3 ~/.claude/skills/skill-creator-plus/scripts/validate_skill.py --all ~/.claude/skills</code></pre>
@@ -364,15 +364,15 @@ If step 4 fails on the total, go back to step 2.</pre>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <h4 class="font-semibold text-teal-400 mb-4">Os maiores ofensores</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400 font-mono">ST5</span><span>Referência com mais de 100 linhas sem sumário no topo. Uma leitura parcial não mostra tudo o que o arquivo cobre.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 font-mono">ST5</span><span>Referência com mais de 100 linhas sem sumário no topo. Uma leitura parcial nêo mostra tudo o que o arquivo cobre.</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400 font-mono">ST4</span><span>Referência aninhada: arquivo que só se alcança por outro arquivo pode ser apenas pré-visualizado (as primeiras linhas). Tudo linkado direto do SKILL.md.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 font-mono">DS3</span><span>Descrição sem "quando usar", sem as palavras que a pessoa digita.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 font-mono">DS3</span><span>Descriçêo sem "quando usar", sem as palavras que a pessoa digita.</span></li>
 </ul>
 </div>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">1</span><div><h4 class="font-semibold text-white">Rode o validador</h4><p class="text-neutral-400 text-sm">Uma tabela por skill com erros, avisos e as regras violadas.</p></div></div>
-<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">2</span><div><h4 class="font-semibold text-white">Escolha cinco</h4><p class="text-neutral-400 text-sm">As com mais erros ou as que você mais usa. Auditar a biblioteca inteira não compensa o custo.</p></div></div>
-<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">3</span><div><h4 class="font-semibold text-white">Relatório antes da edição</h4><p class="text-neutral-400 text-sm">Peça o relatório e escolha o que aplicar. ST5 e ST4 são correções mecânicas.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">2</span><div><h4 class="font-semibold text-white">Escolha cinco</h4><p class="text-neutral-400 text-sm">As com mais erros ou as que você mais usa. Auditar a biblioteca inteira nêo compensa o custo.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">3</span><div><h4 class="font-semibold text-white">Relatório antes da ediçêo</h4><p class="text-neutral-400 text-sm">Peça o relatório e escolha o que aplicar. ST5 e ST4 sêo correções mecânicas.</p></div></div>
 <div class="flex items-start space-x-4"><span class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center">4</span><div><h4 class="font-semibold text-white">Teste com e sem</h4><p class="text-neutral-400 text-sm">Antes de apagar uma linha, rode a skill com e sem ela. Regra que precisa valer sempre vai para hook.</p></div></div>
 </div>
 <div class="flex flex-col sm:flex-row justify-start gap-3">
@@ -386,19 +386,19 @@ If step 4 fails on the total, go back to step 2.</pre>
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">✓</span>
 <h2 class="text-2xl font-bold">📋 Checklist das 10 regras (copie e use)</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Antes de publicar ou ao revisar uma skill antiga, passe por esta lista. O botão copia em formato de checklist Markdown, pronta para colar no seu editor ou no pedido ao agente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Antes de publicar ou ao revisar uma skill antiga, passe por esta lista. O botêo copia em formato de checklist Markdown, pronta para colar no seu editor ou no pedido ao agente.</p>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-4">
 <ol class="space-y-3 text-neutral-300 text-sm list-decimal pl-5" id="checklist-regras">
 <li>SKILL.md abaixo de 500 linhas; todo arquivo de referência linkado direto do SKILL.md (um nível de profundidade).</li>
 <li>Referência com mais de 100 linhas começa com um sumário.</li>
-<li>Grau de liberdade pelo risco: texto livre onde o contexto decide, modelo onde há padrão, script exato onde o erro custa caro.</li>
+<li>Grau de liberdade pelo risco: texto livre onde o contexto decide, modelo onde há padrêo, script exato onde o erro custa caro.</li>
 <li>Testada em cada modelo que vai usá-la (Haiku, Sonnet, Opus/Fable).</li>
-<li>Só o que o modelo não sabe; descrição em terceira pessoa, com "Use quando…" e as palavras que a pessoa digita.</li>
-<li>Descrição com até 1.024 caracteres; descrição + when_to_use abaixo de 1.536; caso de uso principal primeiro.</li>
+<li>Só o que o modelo nêo sabe; descriçêo em terceira pessoa, com "Use quando…" e as palavras que a pessoa digita.</li>
+<li>Descriçêo com até 1.024 caracteres; descriçêo + when_to_use abaixo de 1.536; caso de uso principal primeiro.</li>
 <li>Tarefa longa tem checklist que o agente copia na resposta, com "pronto quando…" e "se falhar, volte ao passo X".</li>
-<li>Loop de verificação: rodar, corrigir o que falhou, repetir até passar.</li>
-<li>Regras críticas no topo, porque após a compactação só os primeiros 5.000 tokens da skill ficam; nenhum pedido para escrever o raciocínio.</li>
-<li>Regra que não pode quebrar vira hook no frontmatter; pacotes listados com a linha de instalação.</li>
+<li>Loop de verificaçêo: rodar, corrigir o que falhou, repetir até passar.</li>
+<li>Regras críticas no topo, porque após a compactaçêo só os primeiros 5.000 tokens da skill ficam; nenhum pedido para escrever o raciocínio.</li>
+<li>Regra que nêo pode quebrar vira hook no frontmatter; pacotes listados com a linha de instalaçêo.</li>
 </ol>
 </div>
 <div class="flex justify-start items-center gap-3 mb-6">
@@ -416,15 +416,15 @@ If step 4 fails on the total, go back to step 2.</pre>
 <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo · Fim do Curso</h2>
 <div class="space-y-4 mb-8">
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Graus de liberdade</strong><span class="text-neutral-400"> — alto, médio ou baixo conforme o risco de cada passo; misture na mesma skill</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Descrição</strong><span class="text-neutral-400"> — terceira pessoa, "Use quando…", até 1.024 caracteres; o Claude Code corta descrição + when_to_use em 1.536</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Hooks na skill</strong><span class="text-neutral-400"> — declarados no frontmatter, valem do momento da chamada até o fim da sessão</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">5.000 tokens</strong><span class="text-neutral-400"> — o que importa vai no topo, porque é só isso que volta depois da compactação</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Modelos 5.5</strong><span class="text-neutral-400"> — peça o resultado, não o raciocínio; corte andaime só depois de testar com e sem</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Audite</strong><span class="text-neutral-400"> — validador do auditar-skills nas suas skills, cinco por vez, relatório antes da edição</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Descriçêo</strong><span class="text-neutral-400"> — terceira pessoa, "Use quando…", até 1.024 caracteres; o Claude Code corta descriçêo + when_to_use em 1.536</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Hooks na skill</strong><span class="text-neutral-400"> — declarados no frontmatter, valem do momento da chamada até o fim da sessêo</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">5.000 tokens</strong><span class="text-neutral-400"> — o que importa vai no topo, porque é só isso que volta depois da compactaçêo</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Modelos 5.5</strong><span class="text-neutral-400"> — peça o resultado, nêo o raciocínio; corte andaime só depois de testar com e sem</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Audite</strong><span class="text-neutral-400"> — validador do auditar-skills nas suas skills, cinco por vez, relatório antes da ediçêo</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-teal-400 mb-2">Você concluiu o curso! 🎉</h3>
-<p class="text-neutral-300">Cinco trilhas, da visão do ecossistema até governança e as regras de 2026. Agora é com você: rode o validador nas suas skills, corrija as cinco piores, escreva a próxima já dentro da checklist e continue aprendendo no portal.</p>
+<p class="text-neutral-300">Cinco trilhas, da visêo do ecossistema até governança e as regras de 2026. Agora é com você: rode o validador nas suas skills, corrija as cinco piores, escreva a próxima já dentro da checklist e continue aprendendo no portal.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 5</a>

@@ -100,7 +100,7 @@
 <h2 class="text-2xl font-bold">📁 Estrutura de repo pra publicar</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Para uma skill ser instalável e indexável, o repo precisa seguir a convenção: uma pasta <code class="text-teal-400">skills/</code> na raiz, e dentro dela cada skill com seu <strong class="text-teal-400">SKILL.md</strong> mais os resources opcionais. Fora dessa estrutura, o CLI e o skills.sh não encontram nada.
+        Para uma skill ser instalável e indexável, o repo precisa seguir a convençêo: uma pasta <code class="text-teal-400">skills/</code> na raiz, e dentro dela cada skill com seu <strong class="text-teal-400">SKILL.md</strong> mais os resources opcionais. Fora dessa estrutura, o CLI e o skills.sh nêo encontram nada.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">layout de um repo publicável:</p>
@@ -138,21 +138,21 @@
 <h2 class="text-2xl font-bold">🔀 Versionar via git</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Skills vivem em git e são instaladas como <strong class="text-teal-400">symlinks</strong>, não cópias. Isso muda tudo: quando você dá <code>git push</code> e o usuário roda <code>npx skills update</code>, sua nova versão se propaga para todos. Você não controla só seu repo — controla o comportamento de quem instalou.
+        Skills vivem em git e sêo instaladas como <strong class="text-teal-400">symlinks</strong>, nêo cópias. Isso muda tudo: quando você dá <code>git push</code> e o usuário roda <code>npx skills update</code>, sua nova versêo se propaga para todos. Você nêo controla só seu repo — controla o comportamento de quem instalou.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Commit + push</h4>
-<p class="text-neutral-300 text-sm">A fonte da verdade é o git. Edite o SKILL.md, commite com uma mensagem clara, faça push. Pronto — a versão publicada mudou.</p>
+<p class="text-neutral-300 text-sm">A fonte da verdade é o git. Edite o SKILL.md, commite com uma mensagem clara, faça push. Pronto — a versêo publicada mudou.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Symlink no lado do usuário</h4>
-<p class="text-neutral-300 text-sm">Por padrão a skill é symlinkada do repo clonado. Não há cópia congelada — a instalação aponta para a fonte.</p>
+<p class="text-neutral-300 text-sm">Por padrêo a skill é symlinkada do repo clonado. Nêo há cópia congelada — a instalaçêo aponta para a fonte.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -183,7 +183,7 @@
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> O poder do symlink</h3>
-<p class="text-neutral-300 text-sm">O symlink é por que skills se atualizam de graça — mas também por que um push ruim afeta todo mundo imediatamente. Trate a main do repo de skills como produção.</p>
+<p class="text-neutral-300 text-sm">O symlink é por que skills se atualizam de graça — mas também por que um push ruim afeta todo mundo imediatamente. Trate a main do repo de skills como produçêo.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -193,7 +193,7 @@
 <h2 class="text-2xl font-bold">🌐 Aparecer no skills.sh</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O <strong class="text-teal-400">skills.sh</strong> indexa repos públicos e mostra o <strong class="text-teal-400">install count</strong> como métrica social — o sinal de descoberta e confiança. Mas as contas são duras: das <strong class="text-teal-400">39.366 skills</strong> do catálogo (5.075 repos fonte, 53,9M instalações somadas), a distribuição segue uma lei de potência brutal.
+        O <strong class="text-teal-400">skills.sh</strong> indexa repos públicos e mostra o <strong class="text-teal-400">install count</strong> como métrica social — o sinal de descoberta e confiança. Mas as contas sêo duras: das <strong class="text-teal-400">39.366 skills</strong> do catálogo (5.075 repos fonte, 53,9M instalações somadas), a distribuiçêo segue uma lei de potência brutal.
       </p>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-4 text-center"><div class="text-2xl font-bold text-teal-400">60,2%</div><div class="text-xs text-neutral-400 mt-1">&lt;100 installs</div></div>
@@ -221,8 +221,8 @@
 </svg>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <h3 class="text-lg font-semibold text-teal-400 mb-3">As top 100 = 43,7% de todos os installs</h3>
-<p class="text-neutral-300 text-sm mb-3">A concentração é extrema. <code>find-skills</code> sozinha tem 1.802.925 installs (vercel-labs). <code>frontend-design</code> 488.299 (anthropics), <code>vercel-react-best-practices</code> 443.261. Estar no topo é raro — mas o install count ainda é seu melhor sinal de descoberta.</p>
-<p class="text-neutral-300 text-sm">A lição: não persiga o leaderboard. Resolva um problema real bem, com naming e description claros, e a descoberta acontece dentro do seu nicho.</p>
+<p class="text-neutral-300 text-sm mb-3">A concentraçêo é extrema. <code>find-skills</code> sozinha tem 1.802.925 installs (vercel-labs). <code>frontend-design</code> 488.299 (anthropics), <code>vercel-react-best-practices</code> 443.261. Estar no topo é raro — mas o install count ainda é seu melhor sinal de descoberta.</p>
+<p class="text-neutral-300 text-sm">A liçêo: nêo persiga o leaderboard. Resolva um problema real bem, com naming e description claros, e a descoberta acontece dentro do seu nicho.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -232,7 +232,7 @@
 <h2 class="text-2xl font-bold">📊 Medir triggering</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        A pergunta que separa skill amadora de skill profissional: <strong class="text-teal-400">a description dispara nos casos certos?</strong> Você não adivinha — você mede, com evals de gatilho. Liste queries que <em>deveriam</em> disparar, queries que <em>não deveriam</em>, e os near-misses traiçoeiros.
+        A pergunta que separa skill amadora de skill profissional: <strong class="text-teal-400">a description dispara nos casos certos?</strong> Você nêo adivinha — você mede, com evals de gatilho. Liste queries que <em>deveriam</em> disparar, queries que <em>nêo deveriam</em>, e os near-misses traiçoeiros.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">eval de gatilho (exemplo):</p>
@@ -245,7 +245,7 @@ should_trigger:
 
 should_not_trigger:
   - "qual a sintaxe de um for em Python?"
-  - "explica o que é o virtual DOM"   # near-miss: fala de React mas não pede componente
+  - "explica o que é o virtual DOM"   # near-miss: fala de React mas nêo pede componente
 
 # meça: % de acerto em cada lista</pre>
 </div>
@@ -257,23 +257,23 @@ should_not_trigger:
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <h4 class="font-bold text-red-400 mb-4">✗ Should-not-trigger</h4>
-<p class="text-neutral-300 text-sm mb-3">Os casos em que ela precisa ficar quieta. Os near-misses (tocam no tema mas não no gatilho) são os mais reveladores.</p>
-<p class="text-neutral-400 text-xs">Falha aqui = disparo errado (precisão baixa).</p>
+<p class="text-neutral-300 text-sm mb-3">Os casos em que ela precisa ficar quieta. Os near-misses (tocam no tema mas nêo no gatilho) sêo os mais reveladores.</p>
+<p class="text-neutral-400 text-xs">Falha aqui = disparo errado (precisêo baixa).</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> O loop de afinar o gatilho</h3>
-<p class="text-neutral-300 text-sm">Rode os evals → veja onde errou → ajuste só a description (não o corpo) → rode de novo. Os near-misses te dizem exatamente quais palavras adicionar ou remover. Triggering é o KPI que quase ninguém mede — e o que mais determina se a skill é útil.</p>
+<p class="text-neutral-300 text-sm">Rode os evals → veja onde errou → ajuste só a description (nêo o corpo) → rode de novo. Os near-misses te dizem exatamente quais palavras adicionar ou remover. Triggering é o KPI que quase ninguém mede — e o que mais determina se a skill é útil.</p>
 </div>
 </section>
 <!-- Tópico 5 -->
 <section class="mb-16" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">🛡️ Princípio da não-surpresa</h2>
+<h2 class="text-2xl font-bold">🛡️ Princípio da nêo-surpresa</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Skills rodam com a confiança do usuário. O princípio de ouro: <strong class="text-teal-400">a skill não deve fazer nada que o usuário não esperaria</strong> ao ler a description. Nada de deletar arquivos, enviar dados para fora ou rodar comandos destrutivos como efeito colateral silencioso.
+        Skills rodam com a confiança do usuário. O princípio de ouro: <strong class="text-teal-400">a skill nêo deve fazer nada que o usuário nêo esperaria</strong> ao ler a description. Nada de deletar arquivos, enviar dados para fora ou rodar comandos destrutivos como efeito colateral silencioso.
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
@@ -286,10 +286,10 @@ should_not_trigger:
 </ul>
 </div>
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
-<h4 class="font-bold text-teal-400 mb-4">✓ Não-surpresa (confiável)</h4>
+<h4 class="font-bold text-teal-400 mb-4">✓ Nêo-surpresa (confiável)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Faz exatamente o que a description promete</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Ações destrutivas pedem confirmação explícita</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Ações destrutivas pedem confirmaçêo explícita</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Least privilege: só toca no que precisa</span></li>
 <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Scripts auditáveis e transparentes</span></li>
 </ul>
@@ -297,7 +297,7 @@ should_not_trigger:
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Por que isso é existencial pro ecossistema</h3>
-<p class="text-neutral-300 text-sm">Como skills se instalam via symlink e atualizam com um comando, um repo malicioso ou descuidado pode afetar muita gente de uma vez. A reputação do skills.sh inteiro depende de cada autor respeitar a não-surpresa. Audite seus próprios resources como se fosse um usuário desconfiado instalando.</p>
+<p class="text-neutral-300 text-sm">Como skills se instalam via symlink e atualizam com um comando, um repo malicioso ou descuidado pode afetar muita gente de uma vez. A reputaçêo do skills.sh inteiro depende de cada autor respeitar a nêo-surpresa. Audite seus próprios resources como se fosse um usuário desconfiado instalando.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
@@ -307,7 +307,7 @@ should_not_trigger:
 <h2 class="text-2xl font-bold">♻️ O ciclo de vida</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Publicar não é o fim — é o começo do ciclo. A skill é um produto vivo: você <strong class="text-teal-400">publica → observa installs e feedback → itera</strong> na description e no corpo → republica. E repete. O catálogo de 53,9M instalações é feito de skills que iteraram.
+        Publicar nêo é o fim — é o começo do ciclo. A skill é um produto vivo: você <strong class="text-teal-400">publica → observa installs e feedback → itera</strong> na description e no corpo → republica. E repete. O catálogo de 53,9M instalações é feito de skills que iteraram.
       </p>
 <svg aria-label="Ciclo de vida circular de uma skill: publicar, observar installs, iterar" class="w-full h-auto my-6" role="img" viewbox="0 0 600 220">
 <defs><filter id="g56"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs>
@@ -332,7 +332,7 @@ should_not_trigger:
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">🚀</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Publicar</h4>
-<p class="text-neutral-300 text-sm">Repo com pasta skills/, push para o GitHub, indexação no skills.sh. A v1 está no mundo.</p>
+<p class="text-neutral-300 text-sm">Repo com pasta skills/, push para o GitHub, indexaçêo no skills.sh. A v1 está no mundo.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -352,7 +352,7 @@ should_not_trigger:
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Onde aprender mais</h3>
-<p class="text-neutral-300 text-sm">Você fechou as 5 trilhas: panorama, qualidade, anatomia, o loop de criação e os modelos mentais. O próximo passo é publicar sua primeira skill de verdade — e continuar evoluindo. Encontre mais cursos, exemplos e a comunidade no <a class="text-sky-400 hover:text-sky-300 font-semibold" href="https://inema.club" target="_blank">INEMA.CLUB</a>.</p>
+<p class="text-neutral-300 text-sm">Você fechou as 5 trilhas: panorama, qualidade, anatomia, o loop de criaçêo e os modelos mentais. O próximo passo é publicar sua primeira skill de verdade — e continuar evoluindo. Encontre mais cursos, exemplos e a comunidade no <a class="text-sky-400 hover:text-sky-300 font-semibold" href="https://inema.club" target="_blank">INEMA.CLUB</a>.</p>
 </div>
 </section>
 <!-- Resumo + fechamento do curso -->
@@ -361,15 +361,15 @@ should_not_trigger:
 <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo · Fim do Curso</h2>
 <div class="space-y-4 mb-8">
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Estrutura de repo</strong><span class="text-neutral-400"> — pasta skills/ com SKILL.md + scripts/ references/ assets/, progressive disclosure em 3 níveis</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Versionar via git</strong><span class="text-neutral-400"> — symlinks fazem npx skills update propagar tudo; trate a main como produção</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Versionar via git</strong><span class="text-neutral-400"> — symlinks fazem npx skills update propagar tudo; trate a main como produçêo</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">skills.sh e install count</strong><span class="text-neutral-400"> — lei de potência: top 100 = 43,7% dos installs; resolva um problema real do seu nicho</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Medir triggering</strong><span class="text-neutral-400"> — evals de should-trigger / should-not-trigger / near-miss afinam a description</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Princípio da não-surpresa</strong><span class="text-neutral-400"> — a skill nunca faz o que a description não promete; least privilege</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Princípio da nêo-surpresa</strong><span class="text-neutral-400"> — a skill nunca faz o que a description nêo promete; least privilege</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Ciclo de vida</strong><span class="text-neutral-400"> — publicar → observar → iterar, sempre; skill é produto vivo</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-teal-400 mb-2">Você concluiu o curso! 🎉</h3>
-<p class="text-neutral-300">Cinco trilhas, da visão do ecossistema até a publicação e medição. Agora é com você: escolha um workflow repetível do seu dia a dia, escreva a primeira skill, publique e itere. Continue aprendendo no portal.</p>
+<p class="text-neutral-300">Cinco trilhas, da visêo do ecossistema até a publicaçêo e mediçêo. Agora é com você: escolha um workflow repetível do seu dia a dia, escreva a primeira skill, publique e itere. Continue aprendendo no portal.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 5</a>

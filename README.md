@@ -1,4 +1,4 @@
-﻿# Criando Agent Skills â€” Do CatÃ¡logo Ã  Sua Primeira Skill
+ï»¿# Criando Agent Skills ê¢â¬â Do CatêÂ¡logo êÂ  Sua Primeira Skill
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -7,52 +7,52 @@
 
 
 Curso **data-driven** sobre Agent Skills, no formato [INEMA.CLUB](https://inema.club).
-Em vez de teoria solta, parte de uma **anÃ¡lise real de 39.366 skills** coletadas do [skills.sh](https://skills.sh).
+Em vez de teoria solta, parte de uma **anêÂ¡lise real de 39.366 skills** coletadas do [skills.sh](https://skills.sh).
 
-ðŸ”— **Curso publicado:** https://inematds.github.io/skills-craft/
+ê°Å¸ââ **Curso publicado:** https://inematds.github.io/skills-craft/
 
 ## O que tem aqui
 
-| Caminho | O que Ã© |
+| Caminho | O que êÂ© |
 |---|---|
 | `index.html` | Landing do curso |
-| `curso/trilha1..5/` | 5 trilhas Ã— (Ã­ndice + 5 mÃ³dulos) + mÃ³dulo 5.6 (Regras 2026) = 31 pÃ¡ginas. Cada trilha fecha com â­ As Melhores Â· ðŸ› ï¸ Como Criar Â· ðŸš€ Dicas AvanÃ§adas |
+| `curso/trilha1..5/` | 5 trilhas êâ (êÂ­ndice + 5 mêÂ³dulos) + mêÂ³dulo 5.6 (Regras 2026) = 31 pêÂ¡ginas. Cada trilha fecha com ê¢Â­Â As Melhores êÂ· ê°Å¸âºÂ ê¯Â¸Â Como Criar êÂ· ê°Å¸Å¡â¬ Dicas AvanêÂ§adas |
 | `data/` | Dataset coletado do skills.sh (metadados das 39k skills, grupos, stats) |
 | `corpus/examples/` | 25 arquivos `SKILL.md` reais das melhores skills (1 a 2 por grupo) |
-| `BUILD-SPEC.md` | Spec de design usado para gerar as pÃ¡ginas no padrÃ£o INEMA |
+| `BUILD-SPEC.md` | Spec de design usado para gerar as pêÂ¡ginas no padrêÂ£o INEMA |
 
 ## As 5 trilhas
 
-1. ðŸŒ **Panorama do Ecossistema** â€” o que Ã© uma skill, por que o formato venceu, o mapa do skills.sh.
-2. â­ **Qualidade & As Melhores** â€” como ler sinais de qualidade e vitrine das melhores por grupo.
-3. ðŸ§¬ **Anatomia de uma Skill** â€” SKILL.md por dentro, progressive disclosure, a description que dispara.
-4. ðŸ› ï¸ **Como Criar (o loop)** â€” do intent ao draft, e o loop testarâ†’avaliarâ†’iterar.
-5. ðŸ§  **O Que Pensar** â€” quando vale uma skill, anti-padrÃµes, publicar/versionar/medir.
+1. ê°Å¸ÅÂ **Panorama do Ecossistema** ê¢â¬â o que êÂ© uma skill, por que o formato venceu, o mapa do skills.sh.
+2. ê¢Â­Â **Qualidade & As Melhores** ê¢â¬â como ler sinais de qualidade e vitrine das melhores por grupo.
+3. ê°Å¸Â§Â¬ **Anatomia de uma Skill** ê¢â¬â SKILL.md por dentro, progressive disclosure, a description que dispara.
+4. ê°Å¸âºÂ ê¯Â¸Â **Como Criar (o loop)** ê¢â¬â do intent ao draft, e o loop testarê¢â âavaliarê¢â âiterar.
+5. ê°Å¸Â§Â  **O Que Pensar** ê¢â¬â quando vale uma skill, anti-padrêÂµes, publicar/versionar/medir.
 
 ## Os dados (`data/`)
 
-- `skills-index.json` â€” as 39.366 skills (id, name, installs, source, group).
-- `sources.json` â€” 5.075 repositÃ³rios fonte com contagem.
-- `by-group-top30.json` â€” top 30 por grupo.
-- `selection-details.json` â€” 177 skills top com a `description` real.
-- `stats.json` â€” estatÃ­sticas agregadas (lei de potÃªncia, distribuiÃ§Ã£o, volume por grupo).
+- `skills-index.json` ê¢â¬â as 39.366 skills (id, name, installs, source, group).
+- `sources.json` ê¢â¬â 5.075 repositêÂ³rios fonte com contagem.
+- `by-group-top30.json` ê¢â¬â top 30 por grupo.
+- `selection-details.json` ê¢â¬â 177 skills top com a `description` real.
+- `stats.json` ê¢â¬â estatêÂ­sticas agregadas (lei de potêÂªncia, distribuiêÂ§êÂ£o, volume por grupo).
 
-### NÃºmeros-chave
-- **39.366** skills Â· **5.075** repos Â· **53,9M** instalaÃ§Ãµes somadas Â· **16** grupos.
-- Lei de potÃªncia: **60,2%** tÃªm <100 installs; sÃ³ **0,3% (131)** passam de 100k.
+### NêÂºmeros-chave
+- **39.366** skills êÂ· **5.075** repos êÂ· **53,9M** instalaêÂ§êÂµes somadas êÂ· **16** grupos.
+- Lei de potêÂªncia: **60,2%** têÂªm <100 installs; sêÂ³ **0,3% (131)** passam de 100k.
 - As **100 mais instaladas** concentram **43,7%** de todos os installs.
 
-> Coleta via API pÃºblica do skills.sh (`/api/search`) + `raw.githubusercontent` para os `SKILL.md`. Snapshot de 2026-06.
+> Coleta via API pêÂºblica do skills.sh (`/api/search`) + `raw.githubusercontent` para os `SKILL.md`. Snapshot de 2026-06.
 
 ---
 
-Feito para o portal [INEMA.CLUB](https://inema.club) Â· 2026
+Feito para o portal [INEMA.CLUB](https://inema.club) êÂ· 2026
 
 <!-- inema-backlink:v1 -->
 ## Mais no INEMA.CLUB
 
 - [Ficha completa deste curso](https://www.inema.club/cursos/132-criando-agent-skills-do-catalogo-a-sua-primeira-skill/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Guia: como aprender inteligêÂªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
 - [Todos os cursos](https://www.inema.club/cursos/)
 <!-- /inema-backlink:v1 -->
 

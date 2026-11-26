@@ -121,7 +121,7 @@
 <text fill="#22c55e" font-family="Inter" font-size="9" x="300" y="185">✓ lido (tarefa GCP)</text>
 <rect fill="#4b5563" height="44" opacity="0.25" rx="8" stroke="#4b5563" stroke-width="1.5" width="140" x="420" y="150"></rect>
 <text fill="#6b7280" x="490" y="170">references/azure.md</text>
-<text fill="#6b7280" font-family="Inter" font-size="9" x="490" y="185">✗ NÃO carregado</text>
+<text fill="#6b7280" font-family="Inter" font-size="9" x="490" y="185">✗ NêO carregado</text>
 </g>
 </svg>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
@@ -136,12 +136,12 @@
 <h2 class="text-2xl font-bold">🗂️ references/ por domínio</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        O padrão canônico do skill-creator: quando uma skill cobre vários domínios, <strong class="text-purple-400">organize por variante</strong> e deixe o SKILL.md fazer a seleção. O agente lê apenas o arquivo de referência relevante.
+        O padrêo canônico do skill-creator: quando uma skill cobre vários domínios, <strong class="text-purple-400">organize por variante</strong> e deixe o SKILL.md fazer a seleçêo. O agente lê apenas o arquivo de referência relevante.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">estrutura de domain organization (do skill-creator):</p>
 <pre class="text-neutral-300 leading-relaxed">cloud-deploy/
-├── SKILL.md          # workflow + seleção
+├── SKILL.md          # workflow + seleçêo
 └── references/
     ├── aws.md         # lido só em tarefas AWS
     ├── gcp.md         # lido só em tarefas GCP
@@ -164,7 +164,7 @@ Read ONLY the file for the user's provider.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Pro tip</h3>
-<p class="text-neutral-300 text-sm">Um arquivo único de 900 linhas força o agente a carregar tudo. Três de 300 deixam ele pegar só um — economia de 66% de contexto. E manutenção fica trivial: você edita azure.md sem tocar no resto.</p>
+<p class="text-neutral-300 text-sm">Um arquivo único de 900 linhas força o agente a carregar tudo. Três de 300 deixam ele pegar só um — economia de 66% de contexto. E manutençêo fica trivial: você edita azure.md sem tocar no resto.</p>
 </div>
 </section>
 <!-- Tópico 3 -->
@@ -178,7 +178,7 @@ Read ONLY the file for the user's provider.</pre>
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-3">✗ Instrução no corpo</h4>
+<h4 class="font-bold text-red-400 mb-3">✗ Instruçêo no corpo</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>"Faça parse do CSV, some a coluna 3, formate..."</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>O agente pode errar a aritmética</span></li>
@@ -190,12 +190,12 @@ Read ONLY the file for the user's provider.</pre>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>"Run <code class="bg-dark-700 px-1 rounded">python scripts/sum.py</code>"</span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Resultado exato, sempre</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Código não ocupa contexto</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Código nêo ocupa contexto</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
-<p class="text-neutral-500 mb-3">no corpo: aponte e execute, não cole o código:</p>
+<p class="text-neutral-500 mb-3">no corpo: aponte e execute, nêo cole o código:</p>
 <pre class="text-neutral-300 leading-relaxed">## Steps
 1. Run `python scripts/package_skill.py &lt;path&gt;`
    to bundle the skill into a .skill file.
@@ -205,8 +205,8 @@ Read ONLY the file for the user's provider.</pre>
 # no contexto; só a saída do comando.</pre>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
-<h3 class="text-lg font-semibold text-purple-400 mb-3">Sinal de extração</h3>
-<p class="text-neutral-300 text-sm">Se você nota o agente reescrevendo o mesmo helper em toda execução, esse é o sinal: escreva uma vez, ponha em <code class="bg-dark-700 px-1 rounded">scripts/</code>, e mande a skill usá-lo. É exatamente o que o skill-creator recomenda no loop de iteração.</p>
+<h3 class="text-lg font-semibold text-purple-400 mb-3">Sinal de extraçêo</h3>
+<p class="text-neutral-300 text-sm">Se você nota o agente reescrevendo o mesmo helper em toda execuçêo, esse é o sinal: escreva uma vez, ponha em <code class="bg-dark-700 px-1 rounded">scripts/</code>, e mande a skill usá-lo. É exatamente o que o skill-creator recomenda no loop de iteraçêo.</p>
 </div>
 </section>
 <!-- Tópico 4 -->
@@ -216,7 +216,7 @@ Read ONLY the file for the user's provider.</pre>
 <h2 class="text-2xl font-bold">📑 Table-of-contents em arquivos &gt;300 linhas</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        Regra do skill-creator: qualquer arquivo de referência com mais de <strong class="text-purple-400">300 linhas</strong> ganha uma tabela de conteúdo no topo. Assim o agente navega direto à seção certa sem reler o arquivo inteiro.
+        Regra do skill-creator: qualquer arquivo de referência com mais de <strong class="text-purple-400">300 linhas</strong> ganha uma tabela de conteúdo no topo. Assim o agente navega direto à seçêo certa sem reler o arquivo inteiro.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">índice no topo de um reference longo:</p>
@@ -233,7 +233,7 @@ Read ONLY the file for the user's provider.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Pro tip</h3>
-<p class="text-neutral-300 text-sm">Se um reference passa de ~300 linhas com a TOC e ainda assim parece grande demais, é sinal de quebrá-lo em dois arquivos por subtema. TOC é o primeiro remédio; partição é o segundo.</p>
+<p class="text-neutral-300 text-sm">Se um reference passa de ~300 linhas com a TOC e ainda assim parece grande demais, é sinal de quebrá-lo em dois arquivos por subtema. TOC é o primeiro remédio; partiçêo é o segundo.</p>
 </div>
 </section>
 <!-- Tópico 5 -->
@@ -243,7 +243,7 @@ Read ONLY the file for the user's provider.</pre>
 <h2 class="text-2xl font-bold">📏 SKILL.md &lt;500 linhas + hierarquia com pointers</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        A regra de ouro: <strong class="text-purple-400">mantenha o corpo abaixo de 500 linhas</strong>. Ao se aproximar do limite, não corte conteúdo — <strong class="text-purple-400">adicione uma camada de hierarquia</strong> com ponteiros claros sobre para onde o agente deve ir em seguida.
+        A regra de ouro: <strong class="text-purple-400">mantenha o corpo abaixo de 500 linhas</strong>. Ao se aproximar do limite, nêo corte conteúdo — <strong class="text-purple-400">adicione uma camada de hierarquia</strong> com ponteiros claros sobre para onde o agente deve ir em seguida.
       </p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
@@ -279,7 +279,7 @@ The references/ directory has more docs:
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Por que o limite importa</h3>
-<p class="text-neutral-300 text-sm">O corpo entra inteiro no contexto a cada disparo. Corpos longos diluem a atenção do agente e custam tokens toda vez. Hierarquia com pointers paga o custo só quando o detalhe é realmente necessário.</p>
+<p class="text-neutral-300 text-sm">O corpo entra inteiro no contexto a cada disparo. Corpos longos diluem a atençêo do agente e custam tokens toda vez. Hierarquia com pointers paga o custo só quando o detalhe é realmente necessário.</p>
 </div>
 </section>
 <!-- Tópico 6 -->
@@ -289,7 +289,7 @@ The references/ directory has more docs:
 <h2 class="text-2xl font-bold">🎨 assets/ e o checklist final</h2>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed">
-        A pasta <code class="bg-dark-700 px-1 rounded">assets/</code> guarda arquivos <strong class="text-purple-400">usados no output</strong>: templates HTML, fontes, ícones, boilerplate. Diferente de references/ (que o agente lê para aprender), assets são preenchidos ou copiados para o resultado final — como o <code class="bg-dark-700 px-1 rounded">assets/eval_review.html</code> que o skill-creator preenche com dados.
+        A pasta <code class="bg-dark-700 px-1 rounded">assets/</code> guarda arquivos <strong class="text-purple-400">usados no output</strong>: templates HTML, fontes, ícones, boilerplate. Diferente de references/ (que o agente lê para aprender), assets sêo preenchidos ou copiados para o resultado final — como o <code class="bg-dark-700 px-1 rounded">assets/eval_review.html</code> que o skill-creator preenche com dados.
       </p>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6 font-mono text-sm">
 <p class="text-neutral-500 mb-3">os três diretórios, papéis distintos:</p>
@@ -304,13 +304,13 @@ assets/     → preenchido   (vai pro output final)</pre>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>references/ fatiado por domínio; agente lê só o relevante</span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>TOC em todo reference acima de 300 linhas</span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Tarefas determinísticas viraram scripts/ que rodam sem contexto</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>assets/ só com arquivos que vão para a saída</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>assets/ só com arquivos que vêo para a saída</span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Cada arquivo tem um ponteiro correspondente no corpo</span></li>
 </ul>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
 <h3 class="text-lg font-semibold text-primary mb-3"><span class="mr-2">💡</span> Dica final</h3>
-<p class="text-neutral-300 text-sm">Multi-arquivo bem feito é o que separa uma skill brinquedo de uma como azure-ai ou supabase. Com a anatomia dominada, a próxima fronteira é o loop de criação — testar, avaliar e otimizar a description — que é exatamente o tema da Trilha 4.</p>
+<p class="text-neutral-300 text-sm">Multi-arquivo bem feito é o que separa uma skill brinquedo de uma como azure-ai ou supabase. Com a anatomia dominada, a próxima fronteira é o loop de criaçêo — testar, avaliar e otimizar a description — que é exatamente o tema da Trilha 4.</p>
 </div>
 </section>
 <!-- Resumo -->
@@ -321,7 +321,7 @@ assets/     → preenchido   (vai pro output final)</pre>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Progressive disclosure real</strong><span class="text-neutral-400"> — SKILL.md roteia, cada arquivo entra só quando preciso.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">references/ por domínio</strong><span class="text-neutral-400"> — aws/gcp/azure separados; o agente lê só o relevante.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">scripts/ sem contexto</strong><span class="text-neutral-400"> — determinístico executa e devolve só o resultado.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">TOC em &gt;300 linhas</strong><span class="text-neutral-400"> — navegação direta; partição quando ainda for grande.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">TOC em &gt;300 linhas</strong><span class="text-neutral-400"> — navegaçêo direta; partiçêo quando ainda for grande.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">&lt;500 linhas + pointers</strong><span class="text-neutral-400"> — adicione hierarquia em vez de cortar conteúdo.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">assets/ para output</strong><span class="text-neutral-400"> — templates e fontes preenchidos no resultado final.</span></div></div>
 </div>
