@@ -1,11 +1,11 @@
-# BUILD-SPEC — Curso "Criando Agent Skills" (formato INEMA.CLUB)
+# BUILD-SPEC — Curso "Criando Agent Skills" (formato ARCKHÉ AI)
 
 Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga este spec ao pé da letra. Nêo invente estrutura nova — copie os esqueletos abaixo e preencha o conteúdo.
 
 ## Identidade do curso
 - Título curto (nav/logo): `Criando Skills` · emoji `🛠️`
 - Título completo: "Criando Agent Skills — Do Catálogo à Sua Primeira Skill"
-- Footer (todas as páginas): `Criando Agent Skills · <a href="https://inema.club" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 2026 · Dados coletados do skills.sh`
+- Footer (todas as páginas): `Criando Agent Skills · <a href="https://ARCKHÉ AI" class="text-sky-400 hover:text-sky-300">ARCKHÉ AI</a> · 2026 · Dados coletados do skills.sh`
 - Idioma: PT-BR. Tom: direto, técnico, sem encheçêo.
 
 ## Trilhas e cores (Tailwind)
@@ -18,11 +18,11 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
 | T5 | trilha5 | O Que Pensar | teal | text-teal-400 / bg-teal-500/20 / border-teal-500/30 / from-teal-900/30 |
 | botêo "próximo" usa a cor da PRÓXIMA trilha. Cor secundária dos SVGs = ciano `#38bdf8`. |
 
-## Regras OBRIGATÓRIAS (checklist INEMA)
+## Regras OBRIGATÓRIAS (checklist ARCKHÉ)
 1. Botões de açêo alinhados à ESQUERDA: `flex justify-start`.
 2. Indicador de tópico = número em círculo `<span class="w-6 h-6 rounded-full ...">1</span>` (NUNCA seta ▶).
 3. No index, cada tópico expansível tem 3 seções: **O que é / Por que aprender / Conceitos-chave**.
-4. Link INEMA.CLUB presente em TODAS as páginas com `text-sky-400`.
+4. Link ARCKHÉ AI presente em TODAS as páginas com `text-sky-400`.
 5. Light mode CSS completo (use o bloco `<style>` deste spec inteiro — já tem base + acentos + sem-gradiente + nav).
 6. Título do módulo `text-2xl font-bold` (h3 nos cards; h1 `text-3xl sm:text-4xl` no header do módulo).
 7. Cores corretas da trilha em tudo.
@@ -37,7 +37,7 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
 16. SVG futurista: ≥1 diagrama SVG inline por MÓDULO (cor da trilha + ciano, glow, `role="img"`+`aria-label`, `w-full h-auto`) e 1 hero SVG no index da trilha.
 
 ## Caminhos (a partir de site/)
-- index da trilha: `site/curso/trilhaN/index.html` → logo/INEMA → `../../index.html`; nav trilhas → `../trilhaM/index.html`; módulos → `modulo-N-Y.html`.
+- index da trilha: `site/curso/trilhaN/index.html` → logo/ARCKHÉ → `../../index.html`; nav trilhas → `../trilhaM/index.html`; módulos → `modulo-N-Y.html`.
 - módulo: `site/curso/trilhaN/modulo-N-Y.html` → logo → `../../index.html`; nav trilhas → `../trilhaM/index.html`; voltar → `index.html`.
 
 ---
@@ -105,7 +105,7 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
             <span class="text-2xl">🛠️</span><span class="font-bold text-lg hidden sm:inline">Criando Skills</span>
           </a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../trilha1/index.html" class="px-2 py-1.5 rounded-lg text-xs font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Panorama</span></a>
@@ -129,7 +129,7 @@ Você (subagente) vai construir páginas HTML de UMA trilha deste curso. Siga es
 ```html
   <footer class="border-t border-dark-600 py-8 mt-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-      <p>Criando Agent Skills · <a href="https://inema.club" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 2026 · Dados coletados do skills.sh</p>
+      <p>Criando Agent Skills · <a href="https://ARCKHÉ AI" class="text-sky-400 hover:text-sky-300">ARCKHÉ AI</a> · 2026 · Dados coletados do skills.sh</p>
     </div>
   </footer>
 ```

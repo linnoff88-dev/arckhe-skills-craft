@@ -36,7 +36,7 @@ GPT Image 2's distinct strength is **directive precision**: it follows multi-ele
 | Iterative refinement that holds composition stable | **GPT Image 2** |
 | Heavy stylization, painterly look | Flux 2 |
 | Hyperrealistic portrait | Nano Banana Pro |
-| Cinematic / aesthetic-first hero shots | Seedream 5 |
+| CARCKHÉtic / aesthetic-first hero shots | Seedream 5 |
 
 If the user explicitly asked for GPT Image 2 / ChatGPT Image 2 / Image 2, route here regardless — don't second-guess the model choice.
 
@@ -122,7 +122,7 @@ These are model-specific patterns that empirically improve output quality. Apply
 
 **Don't conflict instructions.** "no text" + "the word 'AQUA+' on the label" is incoherent — the model will pick one and you don't control which.
 
-**Don't pile up styles.** "ukiyo-e + watercolor + 8K + cinematic + minimalist" cancels out. Pick one or two style anchors max.
+**Don't pile up styles.** "ukiyo-e + watercolor + 8K + cARCKHÉtic + minimalist" cancels out. Pick one or two style anchors max.
 
 For the **edit** endpoint specifically:
 
@@ -155,7 +155,7 @@ subtle rim highlights, e-commerce ready, 8K detail, neutral background
 ```
 A small Tokyo café storefront at dusk, warm interior glow,
 the sign reads "コーヒー" in bold Japanese kana on a wooden plaque,
-shallow depth of field, rule of thirds, cinematic
+shallow depth of field, rule of thirds, cARCKHÉtic
 ```
 
 **Edit — background swap with preservation:**

@@ -6,10 +6,10 @@
 </div>
 
 
-Curso **data-driven** sobre Agent Skills, no formato [INEMA.CLUB](https://inema.club).
+Curso **data-driven** sobre Agent Skills, no formato [ARCKHÉ AI](https://ARCKHÉ AI).
 Em vez de teoria solta, parte de uma **anêÂ¡lise real de 39.366 skills** coletadas do [skills.sh](https://skills.sh).
 
-ê°Å¸ââ **Curso publicado:** https://inematds.github.io/skills-craft/
+ê°Å¸ââ **Curso publicado:** https://linnoff88-dev.github.io/arckhe-/
 
 ## O que tem aqui
 
@@ -19,7 +19,7 @@ Em vez de teoria solta, parte de uma **anêÂ¡lise real de 39.366 skills** co
 | `curso/trilha1..5/` | 5 trilhas êâ (êÂ­ndice + 5 mêÂ³dulos) + mêÂ³dulo 5.6 (Regras 2026) = 31 pêÂ¡ginas. Cada trilha fecha com ê¢Â­Â As Melhores êÂ· ê°Å¸âºÂ ê¯Â¸Â Como Criar êÂ· ê°Å¸Å¡â¬ Dicas AvanêÂ§adas |
 | `data/` | Dataset coletado do skills.sh (metadados das 39k skills, grupos, stats) |
 | `corpus/examples/` | 25 arquivos `SKILL.md` reais das melhores skills (1 a 2 por grupo) |
-| `BUILD-SPEC.md` | Spec de design usado para gerar as pêÂ¡ginas no padrêÂ£o INEMA |
+| `BUILD-SPEC.md` | Spec de design usado para gerar as pêÂ¡ginas no padrêÂ£o ARCKHÉ |
 
 ## As 5 trilhas
 
@@ -46,15 +46,15 @@ Em vez de teoria solta, parte de uma **anêÂ¡lise real de 39.366 skills** co
 
 ---
 
-Feito para o portal [INEMA.CLUB](https://inema.club) êÂ· 2026
+Feito para o portal [ARCKHÉ AI](https://ARCKHÉ AI) êÂ· 2026
 
-<!-- inema-backlink:v1 -->
-## Mais no INEMA.CLUB
+<!-- ARCKHÉ-backlink:v1 -->
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/132-criando-agent-skills-do-catalogo-a-sua-primeira-skill/)
-- [Guia: como aprender inteligêÂªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
-<!-- /inema-backlink:v1 -->
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/132-criando-agent-skills-do-catalogo-a-sua-primeira-skill/)
+- [Guia: como aprender inteligêÂªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+<!-- /ARCKHÉ-backlink:v1 -->
 
 ---
 
